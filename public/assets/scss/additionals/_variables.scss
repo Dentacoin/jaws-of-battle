@@ -1,0 +1,18 @@
+$screen-md: 1200px;
+$screen-sm: 992px;
+$screen-xs: 768px;
+
+$main_color: black;
+$light_blue: #02a6db;
+
+.color-main {
+    color: $main_color;
+}
+
+.color-light-blue {
+    color: $light_blue;
+}
+
+.color-white {
+    color: white;
+}

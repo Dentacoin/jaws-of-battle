@@ -1,0 +1,77 @@
+.shortcode {
+    &.shortcode-testimonials {
+        background-repeat: no-repeat;
+        background-position: center top;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-image: url(/assets/uploads/testimoanials-slider-background.svg);
+        margin-top: -130px;
+        .single-slide {
+            .testimonial-text {
+                width: 80%;
+                margin: 0 auto;
+                @include breakpoint($xs) {
+                    width: 70%;
+                }
+            }
+            .stars {
+                color: #fbd234;
+                font-size: 20px;
+            }
+        }
+        @include breakpoint($xs) {
+            margin-top: -300px;
+            position: relative;
+        }
+    }
+    &.oral-care-journey-slider {
+        position: relative;
+        .phone-mask {
+            top: 0;
+            z-index: 900;
+            width: 230px;
+            height: 100%;
+            border: 10px solid #fff;
+            @include box-shadow(rgba(0, 0, 0, 0.5) 0px 2px 30px 5px);
+            @include rounded(30px);
+            @include horizontal-align(absolute);
+            .phone-notch {
+                width: 110px;
+                height: 17px;
+                margin-right: auto;
+                margin-left: auto;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                background-color: #fff;
+            }
+        }
+        .single-slide {
+            img {
+                width: 230px;
+                margin: 0 auto;
+                @include rounded(32px);
+            }
+            @include breakpoint($xs) {
+                img {
+                    max-width: 220px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        @include breakpoint($max-lgl) {
+            .phone-mask, .single-slide img {
+                width: 200px;
+            }
+        }
+        @include breakpoint($md-only) {
+            .phone-mask, .single-slide img {
+                width: 160px;
+            }
+        }
+        @include breakpoint($xs) {
+            .slick-arrow {
+                background-color: transparent;
+            }
+        }
+    }
+}

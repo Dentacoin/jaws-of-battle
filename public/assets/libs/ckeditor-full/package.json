@@ -1,0 +1,56 @@
+{
+  "_from": "ckeditor-full@^4.7.3",
+  "_id": "ckeditor-full@4.7.3",
+  "_inBundle": false,
+  "_integrity": "sha1-8vJ3dFVJYGlhh/1IGq9NkPQCn8Y=",
+  "_location": "/ckeditor-full",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "ckeditor-full@^4.7.3",
+    "name": "ckeditor-full",
+    "escapedName": "ckeditor-full",
+    "rawSpec": "^4.7.3",
+    "saveSpec": null,
+    "fetchSpec": "^4.7.3"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ckeditor-full/-/ckeditor-full-4.7.3.tgz",
+  "_shasum": "f2f27774554960696187fd481aaf4d90f4029fc6",
+  "_spec": "ckeditor-full@^4.7.3",
+  "_where": "D:\\wamp\\www\\dentacoin",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "http://dev.ckeditor.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "JavaScript WYSIWYG web text editor.",
+  "homepage": "http://ckeditor.com",
+  "keywords": [
+    "ckeditor",
+    "fork",
+    "full",
+    "fckeditor",
+    "editor",
+    "wysiwyg",
+    "html",
+    "richtext",
+    "text",
+    "javascript"
+  ],
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
+  "main": "ckeditor.js",
+  "name": "ckeditor-full",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor-releases.git"
+  },
+  "version": "4.7.3"
+}
