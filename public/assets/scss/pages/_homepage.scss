@@ -1,0 +1,250 @@
+.section-intro {
+    position: relative;
+    padding-top: 300px;
+    @include breakpoint($xs) {
+        min-height: 1500px;
+    }
+    @include breakpoint($xxs) {
+        min-height: 1400px;
+    }
+    .frame-figure {
+        position: fixed;
+        top: 0;
+        z-index: 15;
+        left: 0;
+        @include simple_transition(.3s);
+        .logo {
+            top: -15px;
+            @include horizontal-align(absolute);
+            @include breakpoint($md-only) {
+                top: -5px;
+                img {
+                    max-width: 250px !important;
+                }
+            }
+            @include breakpoint($sm-down) {
+                top: -10px;
+                img {
+                    max-width: 150px !important;
+                }
+            }
+        }
+        &.not-fixed {
+            position: relative;
+        }
+    }
+    /*.frame-figure {
+        -webkit-background-size: cover;
+        background-size: 400%;
+        background-image: url(/assets/uploads/dentacare-website-mooving-header-sprite.png);
+        background-repeat: no-repeat;
+        background-position: left 0 top;
+        &.first-sprite {
+            background-position: left 0 top;
+        }
+        &.second-sprite {
+            background-position: left 33.33333% top;
+        }
+        &.third-sprite {
+            background-position: left calc(33.33333% * 2) top;
+        }
+        &.fourth-sprite {
+            background-position: left calc(33.33333% * 3) top;
+        }
+    }*/
+    .hidden-frame {
+        visibility: hidden;
+    }
+    .absolute-content {
+        width: 100%;
+        overflow-x: hidden;
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .moving-image {
+            position: relative;
+            width: 400%;
+            &.first-sprite {
+                left: 0;
+            }
+            &.second-sprite {
+                left: -100%;
+            }
+            &.third-sprite {
+                left: -200%;
+            }
+            &.fourth-sprite {
+                left: -300%;
+            }
+            &.not-fixed {
+            }
+        }
+        &.not-fixed {
+            overflow-x: visible;
+            top: 300px;
+            position: absolute;
+        }
+    }
+    .below-absolute-content {
+        position: fixed;
+        width: 100%;
+        display: none;
+        &.behind {
+            z-index: 10;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-image: url(/assets/uploads/backround-video.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        &.in-front-of {
+            z-index: 20;
+            h1 {
+                text-shadow: 2px 10px 20px black;
+                padding-top: 120px;
+                padding-bottom: 50px;
+            }
+            p {
+                text-shadow: 2px 10px 10px black;
+            }
+            iframe {
+                border: 5px solid white;
+                width: 70%;
+                height: 800px;
+                @include box-shadow(0px 5px 20px 2px rgba(0, 0, 0, 0.8));
+                @include rounded(4px);
+            }
+            .apps-btns {
+                padding-top: 70px;
+            }
+            @include breakpoint($max-1650) {
+                iframe {
+                    height: 600px;
+                }
+            }
+            @include breakpoint($max-1500) {
+                .apps-btns {
+                    padding-top: 30px;
+                }
+            }
+            @include breakpoint($max-lgl) {
+                iframe {
+                    height: 400px;
+                }
+                h1 {
+                    text-shadow: 2px 10px 20px black;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+                .apps-btns {
+                    padding-top: 30px;
+                }
+            }
+            @include breakpoint($md-only) {
+                iframe {
+                    height: 350px;
+                }
+                h1 {
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                    font-size: 32px !important;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            @include breakpoint($sm-only) {
+                iframe {
+                    height: 200px;
+                }
+                h1 {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 28px !important;
+                    br {
+                        display: none;
+                    }
+                }
+                p {
+                    max-width: 500px !important;
+                    font-size: 16px !important;
+                }
+                .apps-btns {
+                    padding-top: 10px;
+                    img {
+                        max-width: 180px !important;
+                    }
+                }
+            }
+            @include breakpoint($xs) {
+                iframe {
+                    height: 200px;
+                }
+                h1 {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 28px !important;
+                    line-height: 32px !important;
+                }
+                p {
+                    font-size: 16px !important;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    max-width: 320px !important;
+                }
+                .apps-btns {
+                    padding-top: 10px;
+                    img {
+                        max-width: 140px !important;
+                    }
+                }
+            }
+            @include breakpoint($max-600) {
+                iframe {
+                    height: 250px;
+                    width: 80%;
+                }
+                h1 {
+                    padding-top: 30%;
+                    padding-bottom: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 28px !important;
+                }
+                p {
+                    font-size: 16px !important;
+                    padding-top: 15px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    max-width: none !important;
+                }
+            }
+        }
+    }
+}
+.section-how-to-play {
+    position: relative;
+    z-index: 30;
+    .wave-separator {
+        margin-top: -250px;
+    }
+    .line-separator {
+        width: 100%;
+        max-width: 600px;
+        margin: 60px auto 40px;
+        height: 3px;
+        background: black;
+    }
+    .white-background {
+        background-color: white;
+    }
+}
+
+.section-a-jaw-breaking-game-experience {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(/assets/uploads/cards-bg-with-white-wave.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}

@@ -1,0 +1,316 @@
+body {
+    background-color: #222d32;
+}
+
+@for $i from 0 through 100 {
+    .padding-bottom-#{$i} {
+        padding-bottom: 0px + $i!important;
+    }
+}
+
+@for $i from 0 through 80 {
+    .fs-#{$i} {
+        font-size: 0px + $i!important;
+    }
+}
+
+.inline-block {
+    display: inline-block; float: none; vertical-align: middle;
+}
+
+.inline-block-important{
+    display: inline-block !important; float: none; vertical-align: middle;
+}
+
+.inline-block-top {
+    display: inline-block; float: none; vertical-align: top;
+}
+
+.inline-block-bottom {
+    display: inline-block; float: none; vertical-align: bottom;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+input[type='text'], input[type='number'] {
+    padding: 5px;
+    width: 100%;
+}
+
+.form-container {
+    margin-top: 200px;
+    .wrapper {
+        background-color: white;
+        padding: 25px;
+        form {
+            .form-row {
+                padding-bottom: 10px;
+                input[type='text'], input[type='password'] {
+                    border: 1px solid #d2d6de;
+                    color: #333;
+                    padding: 6px 12px;
+                    width: 100%;
+                }
+                &.submit {
+                    padding-bottom: 0;
+                    padding-top: 10px;
+                    input[type='submit'] {
+                        color: white;
+                        background-color: #21bef4;
+                        padding: 8px 20px;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alerts-wrapper {
+    padding-bottom: 15px;
+    .alert {
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+}
+
+header.main-header {
+    figure.logo {
+        width: 230px;
+        padding: 0;
+        img {
+            width: 35px;
+        }
+    }
+    nav {
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 50px);
+}
+
+.user-menu {
+    .dropdown-menu {
+        width: auto !important;
+        min-width: 0 !important;
+    }
+}
+
+.content-wrapper {
+    padding: 10px;
+    section.content {
+        padding: 20px;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            font-size: 26px;
+            padding-bottom: 20px;
+        }
+        form {
+            .form-row {
+                padding-bottom: 10px;
+                text-align: left;
+            }
+            .btn-container {
+                padding-top: 15px;
+            }
+            select {
+                width: 100%;
+                padding: 7px;
+            }
+            label.inline-block {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn {
+    background-color: #3c8dbc !important;
+    color: white !important;
+    &:hover {
+        color: white !important;
+    }
+}
+
+.dataTables_wrapper {
+    .dataTables_info {
+        text-align: center;
+    }
+    .dataTables_paginate {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        span {
+            margin: 0 15px;
+            a {
+                margin: 0 5px;
+                &.current {
+                    cursor: initial;
+                    color: #72afd2;
+                }
+            }
+        }
+    }
+    .dataTables_length {
+        float: left;
+    }
+    .dataTables_filter {
+        float: right;
+        input {
+            margin-left: 5px;
+        }
+    }
+    .sorting_1 {
+        cursor: all-scroll;
+    }
+    .actions {
+        a {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.required-mark {
+    color: red;
+}
+
+.media-popup {
+    .modal-dialog {
+        width: 100%;
+        max-width: 70%;
+        .bootbox-body {
+            padding-top: 15px;
+        }
+    }
+}
+
+.small-image {
+    max-width: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.no-results {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+body.media {
+    margin: 0;
+    overflow: visible;
+}
+
+.remove-image {
+    font-size: 18px;
+    padding-left: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.edit-page {
+    .title {
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Calibri-Bold';
+        padding-top: 20px;
+    }
+}
+
+.add-edit-location-map {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+body.add-location, body.edit-location {
+    select[name="subtype"], select[name="clinic"] {
+        option {
+            display: none;
+        }
+    }
+}
+
+body.add-job-offer, body.edit-job-offer {
+    .skills-body {
+        .single-skill {
+            padding: 5px 10px;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            background: #fafafa;
+            background: -webkit-linear-gradient(top, #fafafa 0%, #eee 100%);
+            background: -moz-linear-gradient(top, #fafafa 0%, #eee 100%);
+            background: linear-gradient(top, #fafafa 0%, #eee 100%);
+            cursor: move;
+            margin-bottom: 5px;
+            font-size: 0;
+            @include rounded(3px);
+            .skill-text {
+                width: calc(100% - 30px);
+                display: inline-block;
+                vertical-align: top;
+                font-size: 13px;
+            }
+            .skill-action {
+                width: 30px;
+                text-align: right;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.captcha-container {
+    justify-content: center;
+    .refresh-captcha {
+        font-size: 20px;
+        color: white;
+        background-color: #21bef4;
+        border: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+body.additionals {
+    .box.api-endpoints {
+        .margin-bottom-10 {
+            margin-bottom: 10px;
+        }
+        .box-title.primary-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0;
+            padding: 10px 10px 0;
+        }
+        .box-header {
+            padding: 5px 10px;
+            .btn-box-tool {
+                padding: 0;
+                width: 20px;
+            }
+            .box-title {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+}

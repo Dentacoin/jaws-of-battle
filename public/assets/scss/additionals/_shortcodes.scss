@@ -1,76 +1,82 @@
 .shortcode {
-    &.shortcode-testimonials {
-        background-repeat: no-repeat;
-        background-position: center top;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-image: url(/assets/uploads/testimoanials-slider-background.svg);
-        margin-top: -130px;
-        .single-slide {
-            .testimonial-text {
-                width: 80%;
-                margin: 0 auto;
-                @include breakpoint($xs) {
-                    width: 70%;
+    &.slider-arrows-type-one {
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-size: auto 100%;
+            z-index: 3;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            display: block;
+            font-size: 0;
+            border: 0;
+            cursor: pointer;
+            @include rounded(50%);
+            &.slick-prev {
+                left: -20px;
+                background-image: url(/assets/uploads/arrow-left.png);
+                @include breakpoint($sm-down) {
+                    left: 0;
                 }
             }
-            .stars {
-                color: #fbd234;
-                font-size: 20px;
+            &.slick-next {
+                right: -20px;
+                background-image: url(/assets/uploads/arrow-right.png);
+                @include breakpoint($sm-down) {
+                    right: 0;
+                }
             }
-        }
-        @include breakpoint($xs) {
-            margin-top: -300px;
-            position: relative;
         }
     }
-    &.oral-care-journey-slider {
-        position: relative;
-        .phone-mask {
-            top: 0;
-            z-index: 900;
-            width: 230px;
-            height: 100%;
-            border: 10px solid #fff;
-            @include box-shadow(rgba(0, 0, 0, 0.5) 0px 2px 30px 5px);
-            @include rounded(30px);
-            @include horizontal-align(absolute);
-            .phone-notch {
-                width: 110px;
-                height: 17px;
-                margin-right: auto;
-                margin-left: auto;
-                border-bottom-left-radius: 16px;
-                border-bottom-right-radius: 16px;
-                background-color: #fff;
-            }
-        }
+    &.card-types-slider {
+
+    }
+    &.featured-cards-slider {
         .single-slide {
-            img {
-                width: 230px;
-                margin: 0 auto;
-                @include rounded(32px);
-            }
-            @include breakpoint($xs) {
-                img {
-                    max-width: 220px;
-                    margin: 0 auto;
+            min-height: 600px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 4px solid white;
+            color: white;
+            position: relative;
+            padding: 50px;
+            @include rounded(10px);
+            .content {
+                width: 50%;
+                margin-left: 50%;
+                font-size: 20px;
+                .mobile-image {
+                    display: none;
+                }
+                .unique-title-part {
+                    text-shadow: 1px 1px 18px white, 0 0 10px white, 1px 0 10px white;
+                    &.chocolate {
+                        color: #595959;
+                    }
+                    &.shield {
+                        color: #01808e;
+                    }
+                    &.striker {
+                        color: #e7001f;
+                    }
                 }
             }
-        }
-        @include breakpoint($max-lgl) {
-            .phone-mask, .single-slide img {
-                width: 200px;
-            }
-        }
-        @include breakpoint($md-only) {
-            .phone-mask, .single-slide img {
-                width: 160px;
-            }
-        }
-        @include breakpoint($xs) {
-            .slick-arrow {
-                background-color: transparent;
+            @include breakpoint($md-down) {
+                padding: 20px 30px;
+                .content {
+                    width: 100%;
+                    margin-left: 0;
+                    .mobile-image {
+                        display: block;
+                        max-width: 400px;
+                        margin: 0 auto;
+                        padding-bottom: 20px;
+                    }
+                }
             }
         }
     }

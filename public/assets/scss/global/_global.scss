@@ -83,6 +83,30 @@ body {
 }
 
 @for $i from 0 through 20 * 2 {
+    @include breakpoint($sm-only) {
+        .padding-top-md-#{$i * 5} {
+            padding-top: 0px + $i * 5 !important;
+        }
+    }
+}
+
+@for $i from 0 through 20 * 2 {
+    @include breakpoint($sm-only) {
+        .padding-left-md-#{$i * 5} {
+            padding-left: 0px + $i * 5 !important;
+        }
+    }
+}
+
+@for $i from 0 through 20 * 2 {
+    @include breakpoint($sm-only) {
+        .padding-right-md-#{$i * 5} {
+            padding-right: 0px + $i * 5 !important;
+        }
+    }
+}
+
+@for $i from 0 through 20 * 2 {
     @include breakpoint($md-only) {
         .padding-top-md-#{$i * 5} {
             padding-top: 0px + $i * 5 !important;
@@ -160,6 +184,10 @@ body {
     .margin-top-#{$i * 5} {
         margin-top: 0px + $i * 5!important;
     }
+}
+
+.margin-0-auto {
+    margin: 0 auto;
 }
 
 @for $i from 0 through 30 * 2 {

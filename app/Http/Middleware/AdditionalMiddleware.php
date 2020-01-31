@@ -20,7 +20,11 @@ class AdditionalMiddleware
             return response(view('pages/maintenance'));
         }*/
 
-        $params = $request->route()->parameters();
-        return (new App\Http\Controllers\Controller())->minifyHtml($next($request));
+        //$params = $request->route()->parameters();
+
+        $response = $next($request);
+        $response->headers->set('Referrer-Policy', 'no-referrer');
+        $response->headers->set('X-XSS-Protection', '1; mode=block');
+        return (new App\Http\Controllers\Controller())->minifyHtml($response);
     }
 }

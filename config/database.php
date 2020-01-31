@@ -54,20 +54,6 @@ return [
             'engine' => 'InnoDB',
         ],
 
-        'mysql2' => [
-            'driver'    => env('DB_CONNECTION_SECOND'),
-            'host'      => env('DB_HOST_SECOND'),
-            'port'      => env('DB_PORT_SECOND'),
-            'database'  => env('DB_DATABASE_SECOND'),
-            'username'  => env('DB_USERNAME_SECOND'),
-            'password'  => env('DB_PASSWORD_SECOND'),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => false,
-            'engine' => 'InnoDB',
-        ],
-
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

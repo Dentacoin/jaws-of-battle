@@ -471,7 +471,7 @@ function useMediaEvent(id, close_btn, editor) {
             }else if(type == 'image')   {
                 editor.insertHtml('<img class="small-image" alt="'+$(this).closest('tr').attr('data-alt')+'" src="'+$(this).closest('tr').attr('data-src')+'"/>');
             }
-        }else {
+        } else {
             if(type == 'file')  {
                 if(id != null)	{
                     $('.media[data-id="'+id+'"] .image-visualization').html('<a href="'+$(this).closest('tr').attr('data-src')+'">'+$(this).closest('tr').attr('data-src')+'</a>');
@@ -492,7 +492,11 @@ function useMediaEvent(id, close_btn, editor) {
                 }
             }
             if(close_btn) {
-                $('.image-visualization').append('<span class="inline-block-top remove-image"><i class="fa fa-times" aria-hidden="true"></i></span>');
+                if(id != null)	{
+                    $('.media[data-id="'+id+'"] .image-visualization').append('<span class="inline-block-top remove-image"><i class="fa fa-times" aria-hidden="true"></i></span>');
+                } else {
+                    $('.image-visualization').append('<span class="inline-block-top remove-image"><i class="fa fa-times" aria-hidden="true"></i></span>');
+                }
             }
         }
         basic.closeDialog();

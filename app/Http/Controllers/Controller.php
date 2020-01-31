@@ -41,7 +41,10 @@ class Controller extends BaseController
     }
 
     public function getMenu($menu_slug) {
-        return MenuElement::where(array('menu_id' => Menu::where(array('slug' => $menu_slug))->get()->first()->id))->get()->sortBy('order_id');
+        $menu = Menu::where(array('slug' => $menu_slug))->get()->first();
+        if(!empty($menu)) {
+            return MenuElement::where(array('menu_id' => $menu->id))->get()->sortBy('order_id');
+        }
     }
 
     protected function isMobile()   {
