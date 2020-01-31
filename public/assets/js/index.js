@@ -39,12 +39,12 @@ if(mobile_os.iOS()) {
 var pagesData = {
     homepage: function() {
         $(window).on('scroll', function()  {
-            $('.below-absolute-content').css({'top' : $('.moving-image').height() + 'px'}).height($('.section-intro').height() - $('.moving-image').height()).fadeIn();
             introSectionBackgroundPostionSetup();
         });
 
         function introSectionBackgroundPostionSetup() {
-            console.log('introSectionBackgroundPostionSetup');
+            $('.below-absolute-content').css({'top' : $('.moving-image').height() + 'px'}).height($('.section-intro').height() - $('.moving-image').height()).fadeIn();
+
             if ($(document).scrollTop() == 0) {
                 $('.moving-image').removeClass('second-sprite third-sprite fourth-sprite not-fixed');
                 $('.frame-figure').removeClass('not-fixed');
@@ -87,7 +87,6 @@ var pagesData = {
 
                 $('.below-absolute-content').css({'top' : ($('.moving-image').height() + 300) + 'px', 'position' : 'absolute'});
             }
-            console.log($(document).scrollTop(), '$(document).scrollTop()');
         }
         introSectionBackgroundPostionSetup();
 

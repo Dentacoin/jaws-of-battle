@@ -6314,7 +6314,7 @@ footer .border-top {
       .section-intro .below-absolute-content.in-front-of iframe {
         border: 5px solid white;
         width: 70%;
-        height: 800px;
+        height: 650px;
         -webkit-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
         -moz-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
         -ms-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
@@ -6325,9 +6325,11 @@ footer .border-top {
         border-radius: 4px; }
       .section-intro .below-absolute-content.in-front-of .apps-btns {
         padding-top: 70px; }
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: 1650px) {
         .section-intro .below-absolute-content.in-front-of iframe {
-          height: 600px; } }
+          height: 600px; }
+        .section-intro .below-absolute-content.in-front-of p br {
+          display: none; } }
       @media screen and (max-width: 1500px) {
         .section-intro .below-absolute-content.in-front-of .apps-btns {
           padding-top: 30px; } }
@@ -6360,7 +6362,7 @@ footer .border-top {
             display: none; }
         .section-intro .below-absolute-content.in-front-of p {
           max-width: 500px !important;
-          font-size: 16px !important; }
+          font-size: 14px !important; }
         .section-intro .below-absolute-content.in-front-of .apps-btns {
           padding-top: 10px; }
           .section-intro .below-absolute-content.in-front-of .apps-btns img {
@@ -6370,11 +6372,11 @@ footer .border-top {
           height: 200px; }
         .section-intro .below-absolute-content.in-front-of h1 {
           padding-top: 20px;
-          padding-bottom: 20px;
+          padding-bottom: 10px;
           font-size: 28px !important;
           line-height: 32px !important; }
         .section-intro .below-absolute-content.in-front-of p {
-          font-size: 16px !important;
+          font-size: 14px !important;
           padding-left: 15px;
           padding-right: 15px;
           max-width: 320px !important; }
@@ -6388,12 +6390,10 @@ footer .border-top {
           width: 80%; }
         .section-intro .below-absolute-content.in-front-of h1 {
           padding-top: 30%;
-          padding-bottom: 20px;
           padding-left: 15px;
           padding-right: 15px;
           font-size: 28px !important; }
         .section-intro .below-absolute-content.in-front-of p {
-          font-size: 16px !important;
           padding-top: 15px;
           padding-left: 15px;
           padding-right: 15px;
@@ -6403,7 +6403,10 @@ footer .border-top {
   position: relative;
   z-index: 30; }
   .section-how-to-play .wave-separator {
-    margin-top: -250px; }
+    margin-top: -300px; }
+    @media screen and (max-width: 1650px) {
+      .section-how-to-play .wave-separator {
+        margin-top: -250px; } }
   .section-how-to-play .line-separator {
     width: 100%;
     max-width: 600px;

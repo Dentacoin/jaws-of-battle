@@ -22,7 +22,7 @@
         <div class="below-absolute-content in-front-of text-center">
             <iframe src="https://www.youtube.com/embed/53604WPHUeY"></iframe>
             <h1 class="color-white fs-48 line-height-48 lato-black">FAMILY FUN FOR<br>ALL AGES</h1>
-            <p class="color-white fs-18 max-width-600 margin-0-auto">Collect cards and battle your way to the top. Challenge fierece bosses and dominate your way to the top. Learn more about dental care and develop healthy habits along your journey. Battle alone, with your friends, or your family - Jaws of Battle brings new life to family fun!</p>
+            <p class="color-white fs-18 max-width-600 margin-0-auto">Become the ultimate Dentawarrior in Dentacare: Jaws of Battle – the first and only educational trading card game that helps you develop healthy dental care habits! <br><br>Lock jaws and face your opponents in head to head combat to determine who can keep most of their teeth standing. Unlock new cards, build the ultimate deck and pave your way to the top. Do you have what it takes to become Arena Champion?</p>
             <div class="apps-btns">
                 <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block android-btn padding-right-15 padding-right-xs-0">
                     <a href="https://play.google.com/apps/testing/com.DentaCare.JawsOfBattle" target="_blank">
@@ -78,9 +78,7 @@
                 <div class="inline-block-top color-white col-xs-12 col-sm-10 col-sm-offset-1 col-lg-4 col-lg-offset-0 padding-top-sm-50 padding-top-md-50 padding-top-250 padding-top-xs-70 fs-18 line-height-20">
                     <h2 class="fs-40 fs-xs-24 line-height-55 line-height-xs-34 lato-black">A JAW-BRAKING CARD GAME EXPERIENCE</h2><br>
                     <p>
-                        Become the ultimate Dentawarior in Dentacare: Jaws of Batle - the first and only educational trading card game that helps you develop healthy dental care habits! <br><br>Lock jaws and face your opponents in head to head combat to
-                        determine who can keep most of their teeth standing. Unlock new cards, build the ultimate deck and pave your way to the top. Do you have what it takes to become Arena Champion?<br><br>Breathe some fresh air into what has always been a dul chore and start having fun doing it for once. Learn, as you play - every card mimics the real world effects it has on your teeth, so you will be an
-                        expert on dental health in no time! <br><br>So what are you waiting for? Brush your teeth and prepare for battle!
+                        Breathe some fresh air into what has always been a dull chore and start having fun doing it for once. Learn, as you play - every card mimics the real world effects it has on your teeth, so you will be an expert on dental health in no time!<br><br>Collect cards and battle your way to the top, by challenging fierce bosses. Learn more about dental care and develop healthy habits along the journey. <br><br>So what are you waiting for? Brush your teeth and prepare for battle!
                     </p>
                     <br>
                     <div class="row fs-0">

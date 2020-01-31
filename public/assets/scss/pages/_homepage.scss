@@ -111,7 +111,7 @@
             iframe {
                 border: 5px solid white;
                 width: 70%;
-                height: 800px;
+                height: 650px;
                 @include box-shadow(0px 5px 20px 2px rgba(0, 0, 0, 0.8));
                 @include rounded(4px);
             }
@@ -121,6 +121,11 @@
             @include breakpoint($max-1650) {
                 iframe {
                     height: 600px;
+                }
+                p {
+                    br {
+                        display: none;
+                    }
                 }
             }
             @include breakpoint($max-1500) {
@@ -168,7 +173,7 @@
                 }
                 p {
                     max-width: 500px !important;
-                    font-size: 16px !important;
+                    font-size: 14px !important;
                 }
                 .apps-btns {
                     padding-top: 10px;
@@ -183,12 +188,12 @@
                 }
                 h1 {
                     padding-top: 20px;
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                     font-size: 28px !important;
                     line-height: 32px !important;
                 }
                 p {
-                    font-size: 16px !important;
+                    font-size: 14px !important;
                     padding-left: 15px;
                     padding-right: 15px;
                     max-width: 320px !important;
@@ -207,13 +212,11 @@
                 }
                 h1 {
                     padding-top: 30%;
-                    padding-bottom: 20px;
                     padding-left: 15px;
                     padding-right: 15px;
                     font-size: 28px !important;
                 }
                 p {
-                    font-size: 16px !important;
                     padding-top: 15px;
                     padding-left: 15px;
                     padding-right: 15px;
@@ -227,7 +230,10 @@
     position: relative;
     z-index: 30;
     .wave-separator {
-        margin-top: -250px;
+        margin-top: -300px;
+        @include breakpoint($max-1650) {
+            margin-top: -250px;
+        }
     }
     .line-separator {
         width: 100%;

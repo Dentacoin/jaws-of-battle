@@ -7,7 +7,7 @@ $lg: ( min: 1200px );
 $lgl: ( min: 1400px );
 $max-lgl: ( max: 1450px );
 $max-1500: ( max: 1500px );
-$max-1650: ( max: 1600px );
+$max-1650: ( max: 1650px );
 $sm-only: ( min: map-get($sm, min), max: map-get($md, min) - 1 );
 $sm-only-landscape-only: ( min: map-get($sm, min), max: map-get($md, min) - 1, orientation: "landscape");
 $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
