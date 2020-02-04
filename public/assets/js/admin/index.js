@@ -71,9 +71,11 @@ function addHTMLEditor(){
     if($('.ckeditor-init').length > 0)   {
         $('.ckeditor-init').each(function() {
             var options = $.extend({
+                    basicEntities: false,
+                    entities: false,
+                    fillEmptyBlocks: false,
                     height: 350,
                     allowedContent: true,
-                    disallowedContent: 'script',
                     contentsCss : ['/dist/css/front-libs-style.css', '/assets/css/style.css']
                 }, {on: {
                         pluginsLoaded: function() {
@@ -106,6 +108,7 @@ function addHTMLEditor(){
                         }
                     }},
                 options);
+
             CKEDITOR.replace($(this).attr('id'), options);
             //CKEDITOR.addCss('body{background:blue;}');
         });

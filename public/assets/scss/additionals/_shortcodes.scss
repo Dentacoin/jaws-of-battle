@@ -72,9 +72,16 @@
                     margin-left: 0;
                     .mobile-image {
                         display: block;
-                        max-width: 400px;
+                        max-width: 300px;
                         margin: 0 auto;
                         padding-bottom: 20px;
+                    }
+                }
+            }
+            @include breakpoint($xs) {
+                .content {
+                    .mobile-image {
+                        max-width: 200px;
                     }
                 }
             }

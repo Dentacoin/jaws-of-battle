@@ -6178,9 +6178,12 @@ img {
         margin-left: 0; }
         .shortcode.featured-cards-slider .single-slide .content .mobile-image {
           display: block;
-          max-width: 400px;
+          max-width: 300px;
           margin: 0 auto;
           padding-bottom: 20px; } }
+  @media screen and (max-width: 767px) {
+    .shortcode.featured-cards-slider .single-slide .content .mobile-image {
+      max-width: 200px; } }
 
 footer .border-top {
   border-top: 1px solid black; }
@@ -6307,8 +6310,8 @@ footer .border-top {
       z-index: 20; }
       .section-intro .below-absolute-content.in-front-of h1 {
         text-shadow: 2px 10px 20px black;
-        padding-top: 120px;
-        padding-bottom: 50px; }
+        padding-top: 30px;
+        padding-bottom: 30px; }
       .section-intro .below-absolute-content.in-front-of p {
         text-shadow: 2px 10px 10px black; }
       .section-intro .below-absolute-content.in-front-of iframe {
@@ -6324,7 +6327,7 @@ footer .border-top {
         -ms-border-radius: 4px;
         border-radius: 4px; }
       .section-intro .below-absolute-content.in-front-of .apps-btns {
-        padding-top: 70px; }
+        padding-top: 40px; }
       @media screen and (max-width: 1650px) {
         .section-intro .below-absolute-content.in-front-of iframe {
           height: 600px; }
@@ -6335,64 +6338,65 @@ footer .border-top {
           padding-top: 30px; } }
       @media screen and (max-width: 1450px) {
         .section-intro .below-absolute-content.in-front-of iframe {
-          height: 400px; }
-        .section-intro .below-absolute-content.in-front-of h1 {
-          text-shadow: 2px 10px 20px black;
-          padding-top: 40px;
-          padding-bottom: 40px; }
-        .section-intro .below-absolute-content.in-front-of .apps-btns {
-          padding-top: 30px; } }
-      @media screen and (min-width: 992px) and (max-width: 1199px) {
-        .section-intro .below-absolute-content.in-front-of iframe {
           height: 350px; }
         .section-intro .below-absolute-content.in-front-of h1 {
-          padding-top: 30px;
-          padding-bottom: 10px;
+          text-shadow: 2px 10px 20px black;
+          padding-top: 20px;
+          padding-bottom: 20px; }
+        .section-intro .below-absolute-content.in-front-of .apps-btns {
+          padding-top: 20px; } }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .section-intro .below-absolute-content.in-front-of iframe {
+          height: 300px; }
+        .section-intro .below-absolute-content.in-front-of h1 {
+          padding-top: 10px;
+          padding-bottom: 0;
           font-size: 32px !important; }
           .section-intro .below-absolute-content.in-front-of h1 br {
-            display: none; } }
+            display: none; }
+        .section-intro .below-absolute-content.in-front-of p {
+          font-size: 16px !important; } }
       @media screen and (min-width: 768px) and (max-width: 991px) {
         .section-intro .below-absolute-content.in-front-of iframe {
           height: 200px; }
         .section-intro .below-absolute-content.in-front-of h1 {
           padding-top: 10px;
-          padding-bottom: 10px;
-          font-size: 28px !important; }
+          padding-bottom: 0;
+          font-size: 24px !important; }
           .section-intro .below-absolute-content.in-front-of h1 br {
             display: none; }
         .section-intro .below-absolute-content.in-front-of p {
           max-width: 500px !important;
-          font-size: 14px !important; }
+          font-size: 12px !important; }
         .section-intro .below-absolute-content.in-front-of .apps-btns {
           padding-top: 10px; }
           .section-intro .below-absolute-content.in-front-of .apps-btns img {
-            max-width: 180px !important; } }
+            max-width: 125px !important; } }
       @media screen and (max-width: 767px) {
         .section-intro .below-absolute-content.in-front-of iframe {
           height: 200px; }
         .section-intro .below-absolute-content.in-front-of h1 {
-          padding-top: 20px;
-          padding-bottom: 10px;
-          font-size: 28px !important;
-          line-height: 32px !important; }
+          padding-top: 10px;
+          padding-bottom: 0;
+          font-size: 24px !important;
+          line-height: 28px !important; }
         .section-intro .below-absolute-content.in-front-of p {
-          font-size: 14px !important;
           padding-left: 15px;
           padding-right: 15px;
-          max-width: 320px !important; }
+          max-width: 320px !important;
+          font-size: 14px !important; }
         .section-intro .below-absolute-content.in-front-of .apps-btns {
           padding-top: 10px; }
           .section-intro .below-absolute-content.in-front-of .apps-btns img {
-            max-width: 140px !important; } }
+            max-width: 125px !important; } }
       @media screen and (max-width: 600px) {
         .section-intro .below-absolute-content.in-front-of iframe {
           height: 250px;
           width: 80%; }
         .section-intro .below-absolute-content.in-front-of h1 {
-          padding-top: 30%;
+          padding-top: 25%;
           padding-left: 15px;
-          padding-right: 15px;
-          font-size: 28px !important; }
+          padding-right: 15px; }
         .section-intro .below-absolute-content.in-front-of p {
           padding-top: 15px;
           padding-left: 15px;

@@ -102,8 +102,8 @@
             z-index: 20;
             h1 {
                 text-shadow: 2px 10px 20px black;
-                padding-top: 120px;
-                padding-bottom: 50px;
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
             p {
                 text-shadow: 2px 10px 10px black;
@@ -116,7 +116,7 @@
                 @include rounded(4px);
             }
             .apps-btns {
-                padding-top: 70px;
+                padding-top: 40px;
             }
             @include breakpoint($max-1650) {
                 iframe {
@@ -135,28 +135,31 @@
             }
             @include breakpoint($max-lgl) {
                 iframe {
-                    height: 400px;
+                    height: 350px;
                 }
                 h1 {
                     text-shadow: 2px 10px 20px black;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
                 }
                 .apps-btns {
-                    padding-top: 30px;
+                    padding-top: 20px;
                 }
             }
             @include breakpoint($md-only) {
                 iframe {
-                    height: 350px;
+                    height: 300px;
                 }
                 h1 {
-                    padding-top: 30px;
-                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 0;
                     font-size: 32px !important;
                     br {
                         display: none;
                     }
+                }
+                p {
+                    font-size: 16px !important;
                 }
             }
             @include breakpoint($sm-only) {
@@ -165,20 +168,20 @@
                 }
                 h1 {
                     padding-top: 10px;
-                    padding-bottom: 10px;
-                    font-size: 28px !important;
+                    padding-bottom: 0;
+                    font-size: 24px !important;
                     br {
                         display: none;
                     }
                 }
                 p {
                     max-width: 500px !important;
-                    font-size: 14px !important;
+                    font-size: 12px !important;
                 }
                 .apps-btns {
                     padding-top: 10px;
                     img {
-                        max-width: 180px !important;
+                        max-width: 125px !important;
                     }
                 }
             }
@@ -187,21 +190,21 @@
                     height: 200px;
                 }
                 h1 {
-                    padding-top: 20px;
-                    padding-bottom: 10px;
-                    font-size: 28px !important;
-                    line-height: 32px !important;
+                    padding-top: 10px;
+                    padding-bottom: 0;
+                    font-size: 24px !important;
+                    line-height: 28px !important;
                 }
                 p {
-                    font-size: 14px !important;
                     padding-left: 15px;
                     padding-right: 15px;
                     max-width: 320px !important;
+                    font-size: 14px !important;
                 }
                 .apps-btns {
                     padding-top: 10px;
                     img {
-                        max-width: 140px !important;
+                        max-width: 125px !important;
                     }
                 }
             }
@@ -211,10 +214,9 @@
                     width: 80%;
                 }
                 h1 {
-                    padding-top: 30%;
+                    padding-top: 25%;
                     padding-left: 15px;
                     padding-right: 15px;
-                    font-size: 28px !important;
                 }
                 p {
                     padding-top: 15px;
