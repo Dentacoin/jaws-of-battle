@@ -135,7 +135,7 @@ var pagesData = {
 };
 
 function router() {
-    if($('.homepage').length) {
+    if($('body').hasClass('home')) {
         pagesData.homepage();
     }
 }

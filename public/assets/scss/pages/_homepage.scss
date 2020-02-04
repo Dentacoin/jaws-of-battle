@@ -225,6 +225,11 @@
                     max-width: none !important;
                 }
             }
+            @include breakpoint($xxs) {
+                h1 {
+                    padding-top: 15%;
+                }
+            }
         }
     }
 }
@@ -255,4 +260,7 @@
     background-image: url(/assets/uploads/cards-bg-with-white-wave.png);
     background-repeat: no-repeat;
     background-position: center top;
+    h2, p {
+        text-shadow: 1px 10px 18px black, 0 0px 10px black, 1px 10px 20px black;;
+    }
 }
