@@ -105,7 +105,6 @@
         </div>
         <div class="col-xs-12 col-md-3 inline-block text-right socials text-center-xs text-center-sm" itemscope="" itemtype="http://schema.org/Organization">
             <link itemprop="url" href="{{ route('home') }}">
-            <span class="padding-right-10 inline-block fs-14">Stay in the loop:</span>
             <ul class="inline-block">
                 <li class="inline-block">
                     <a itemprop="sameAs" target="_blank" href="https://www.facebook.com/dentacare.jaws/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
