@@ -16,3 +16,4 @@ yarn-error.log
 /app/Http/Controllers/Admin
 /database
 /resources/views/admin
+/public/blog/wp-config.php
