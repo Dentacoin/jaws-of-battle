@@ -1,0 +1,196 @@
+.single-post-container {
+    .section-post-image {
+        background-image: url(/blog/wp-content/uploads/2020/05/inside-page-bg-1920.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        .post-image {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-top: 5px solid white;
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+            @include rounded(15px 15px 0 0);
+            img {
+                width: 100%;
+                @include vertical-align(absolute);
+            }
+            @include breakpoint($xs) {
+                height: 220px;
+            }
+        }
+    }
+    .section-post-content {
+        .breadcrumbs {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            color: #00a4bd;
+            ul {
+                li {
+                    a {
+                        color: #00a4bd;
+                    }
+                    &:after {
+                        content: ' / ';
+                        padding: 0 7px;
+                    }
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .sticky-socials {
+            .widget {
+                width: 110px;
+                margin: 0 auto;
+                .addtoany_list a {
+                    display: block;
+                }
+            }
+            @include breakpoint($sm-down) {
+                display: none;
+            }
+        }
+        .post-content {
+            hr {
+                width: 300px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                border-top: 2px solid #eee;
+                display: inline-block;
+            }
+            .categories {
+                ul {
+                    li {
+                        a {
+                            display: block;
+                            padding: 3px 5px;
+                            margin: 0 3px;
+                            font-family: "Lato-Bold";
+                            font-size: 16px;
+                            color: white;
+                            @include rounded(5px);
+                        }
+                    }
+                }
+            }
+            .author-name {
+                color: #888888;
+            }
+        }
+    }
+    .section-related-posts {
+        .title-row {
+            position: relative;
+            &:after {
+                content: '';
+                height: 1px;
+                width: calc(100% - 40px);
+                left: 20px;
+                background-color: black;
+                z-index: -1;
+                @include vertical-align(absolute);
+            }
+            h3 {
+                background-color: white;
+                display: inline-block;
+                span {
+                    width: 15px;
+                    height: 15px;
+                    background-color: #ff4f3c;
+                    @include rounded(50%);
+                }
+            }
+        }
+        .related-posts-slider {
+            @include breakpoint($xs) {
+                .slick-slide {
+                    padding-left: 30px !important;
+                    padding-right: 30px !important;
+                }
+            }
+        }
+        .show-all {
+            a {
+                display: inline-block;
+                padding: 8px 60px;
+                color: #333333;
+                background-color: #e1e1e1;
+                @include rounded(6px);
+            }
+        }
+    }
+    .sticky-categories {
+        padding-left: 50px;
+        .categories {
+            nav {
+                ul {
+                    li {
+                        a {
+                            color: #333333;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .newsletter-tile {
+            padding: 15px;
+            background-image: url(/blog/wp-content/uploads/2020/05/subscribe-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            max-width: 220px;
+            @include rounded(8px);
+            input[type="email"] {
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                width: 100%;
+                padding: 5px;
+                @include rounded(4px);
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+                &::-moz-placeholder {
+                    color: white;
+                }
+                &:-ms-input-placeholder {
+                    color: white;
+                }
+            }
+            input[type="submit"] {
+                width: 100%;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: #4fb0d0;
+                border: 0;
+                background-color: #aae0fe;
+                @include rounded(4px);
+            }
+        }
+        @include breakpoint($md-down) {
+            padding-left: 15px;
+        }
+        @include breakpoint($sm-down) {
+            text-align: center;
+            .categories-wrapper {
+                padding-top: 50px;
+                max-width: 400px;
+                margin: 0 auto;
+                text-align: left;
+                .newsletter-tile {
+                    max-width: none;
+                }
+            }
+        }
+    }
+}
