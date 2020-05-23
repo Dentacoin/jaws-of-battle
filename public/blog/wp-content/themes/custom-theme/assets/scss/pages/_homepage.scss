@@ -1,0 +1,36 @@
+.page-homepage {
+    .featured-post-container {
+        background-image: url(/wp-content/uploads/2020/05/home-page-bg-1920.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        .featured-post {
+            position: relative;
+            .featured-post-image {
+                width: 70%;
+                img {
+                    border: 3px solid white;
+                    @include rounded(15px);
+                    @include box-shadow(-15px 15px 20px 2px rgba(0, 0, 0, 0.4));
+                }
+            }
+            .post-tile {
+                width: 40%;
+                right: 0;
+                @include vertical-align(absolute);
+            }
+            @include breakpoint($xs) {
+                .featured-post-image {
+                    width: 100%;
+                }
+                .post-tile {
+                    margin-top: 25px;
+                    width: 100%;
+                    right: auto;
+                    position: static;
+                    @include clear_transform();
+                }
+            }
+        }
+    }
+}
