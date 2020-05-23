@@ -20,7 +20,6 @@ $current_url = home_url(add_query_arg(array(),$wp->request));
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta name=”robots” content=”noodp,noydir” />
-    <base href="/blog/">
     <title><?php wp_title(''); ?></title>
     <script>
         var HOME_URL = "<?php echo site_url(); ?>";
