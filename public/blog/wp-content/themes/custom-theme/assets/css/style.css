@@ -6116,7 +6116,7 @@ header {
       margin: 0 5px; } }
 
 footer {
-  background-image: url(/wp-content/uploads/2020/05/home-page-footer-bg-1920.png);
+  background-image: url(/blog/wp-content/uploads/2020/05/home-page-footer-bg-1920.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -6157,7 +6157,7 @@ footer {
         color: white; }
 
 .page-homepage .featured-post-container {
-  background-image: url(/wp-content/uploads/2020/05/home-page-bg-1920.png);
+  background-image: url(/blog/wp-content/uploads/2020/05/home-page-bg-1920.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; }
@@ -6198,7 +6198,7 @@ footer {
         transform: none; } }
 
 .single-post-container .section-post-image {
-  background-image: url(/wp-content/uploads/2020/05/inside-page-bg-1920.png);
+  background-image: url(/blog/wp-content/uploads/2020/05/inside-page-bg-1920.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; }
@@ -6308,7 +6308,7 @@ footer {
       text-decoration: underline; }
   .single-post-container .sticky-categories .newsletter-tile {
     padding: 15px;
-    background-image: url(/wp-content/uploads/2020/05/subscribe-bg.png);
+    background-image: url(/blog/wp-content/uploads/2020/05/subscribe-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
