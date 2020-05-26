@@ -132,7 +132,7 @@ add_action('widgets_init', 'job_custom_widget_setup');
 function job_image_meta_upon_image_upload($post_ID) {
     if (wp_attachment_is_image($post_ID)) {
         $my_image_title = get_post($post_ID)->post_title;
-        update_post_meta( $post_ID, '_wp_attachment_image_alt', ucfirst(job_transliterate($my_image_title)));
+        update_post_meta( $post_ID, '_wp_attachment_image_alt', ucfirst(str_replace('-', ' ', job_transliterate($my_image_title))));
     }
 }
 add_action('add_attachment', 'job_image_meta_upon_image_upload');
