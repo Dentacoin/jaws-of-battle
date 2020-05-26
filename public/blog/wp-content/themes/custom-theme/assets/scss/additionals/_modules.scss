@@ -57,8 +57,16 @@
             overflow: hidden;
             img {
                 width: 100%;
-                @include vertical-align(absolute);
+                @include vertical-horizontal-align(absolute);
             }
+            @include breakpoint($md) {
+                &:hover {
+                    img {
+                        width: 120%;
+                        max-width: 120%;
+                    }
+                }
+            } 
         }
         h3 {
             color: black;

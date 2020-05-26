@@ -38,7 +38,7 @@ $thisPost = $post;
                                 <?php
                             }
                             ?>
-                            <li class="inline-block" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span itemprop="title"><?php echo $post->post_title; ?></span><meta itemprop="url" content="CURRENT URL"></li></ul>
+                            <li class="inline-block" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span itemprop="title"><?php echo mb_substr(strip_tags($post->post_title), 0, 15); ?>...</span><meta itemprop="url" content="CURRENT URL"></li></ul>
                     </nav>
                 </div>
             </div>
