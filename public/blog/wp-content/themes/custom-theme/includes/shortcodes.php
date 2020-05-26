@@ -108,9 +108,13 @@ function getFeaturedPost($attrs = [])   {
 
     if (!empty($posts)) {
         ?>
-        <section class="featured-post-container padding-top-90 padding-bottom-50">
+        <section class="featured-post-container padding-top-90 padding-bottom-50 padding-bottom-xs-0">
             <div class="container">
-                <h1 class="fs-40 fs-xs-26 lato-black text-center color-white padding-top-15 padding-bottom-30">THE PLACE FOR REAL DENTAWARRIORS</h1>
+                <div class="row desktop-title">
+                    <div class="col-xs-12">
+                        <h1 class="fs-40 fs-xs-26 lato-black text-center color-white padding-top-15 padding-bottom-30">THE PLACE FOR REAL DENTAWARRIORS</h1>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-10 col-md-offset-1 featured-post">
                         <figure itemscope="" itemtype="http://schema.org/ImageObject" class="featured-post-image">
@@ -135,6 +139,11 @@ function getFeaturedPost($attrs = [])   {
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div class="row mobile-title">
+                    <div class="col-xs-12">
+                        <h1 class="fs-40 fs-xs-26 lato-black text-center color-black padding-top-25 padding-bottom-15">THE PLACE FOR REAL DENTAWARRIORS</h1>
                     </div>
                 </div>
             </div>

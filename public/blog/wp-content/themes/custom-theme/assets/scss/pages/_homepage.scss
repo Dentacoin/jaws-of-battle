@@ -22,14 +22,31 @@
             @include breakpoint($xs) {
                 .featured-post-image {
                     width: 100%;
+                    img {
+                        border-bottom: 0;
+                        @include rounded(15px 15px 0 0);
+                        @include box-shadow(none);
+                    }
                 }
                 .post-tile {
-                    margin-top: 25px;
                     width: 100%;
                     right: auto;
                     position: static;
+                    @include rounded(0 0 15px 15px);
                     @include clear_transform();
                 }
+            }
+        }
+        .mobile-title {
+            display: none;
+        }
+        @include breakpoint($xs) {
+            background-position: center bottom 50px;
+            .desktop-title {
+                display: none;
+            }
+            .mobile-title {
+                display: block;
             }
         }
     }

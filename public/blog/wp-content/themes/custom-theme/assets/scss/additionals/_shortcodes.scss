@@ -1,7 +1,4 @@
 .shortcode {
-    &.posts-list {
-
-    }
     &.categories-list {
         ul {
             li {
@@ -14,7 +11,7 @@
                     padding: 8px 10px;
                     min-width: 140px;
                     margin: 0 5px;
-                    @include simple_transition(.3s);   
+                    @include simple_transition(.3s);
                     @include rounded(6px);
                     &.active {
                         background-color: #444444;
@@ -31,8 +28,14 @@
                     }
                 }
                 @include breakpoint($xs) {
-                    display: block !important;
+                    width: 33.33333333%;
                     margin-bottom: 10px;
+                    a {
+                        min-width: 0;
+                        font-size: 15px;
+                        padding: 8px 5px;
+                        margin: 0 3px;
+                    }
                 }
             }
         }

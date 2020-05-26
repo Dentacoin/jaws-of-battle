@@ -316,8 +316,13 @@ Text Domain: dc
     min-width: 100px; } }
 @media screen and (max-width: 767px) {
   .shortcode.categories-list ul li {
-    display: block !important;
-    margin-bottom: 10px; } }
+    width: 33.33333333%;
+    margin-bottom: 10px; }
+    .shortcode.categories-list ul li a {
+      min-width: 0;
+      font-size: 15px;
+      padding: 8px 5px;
+      margin: 0 3px; } }
 
 body {
   margin: 0;
@@ -6365,16 +6370,38 @@ footer {
     @media screen and (max-width: 767px) {
       .page-homepage .featured-post-container .featured-post .featured-post-image {
         width: 100%; }
+        .page-homepage .featured-post-container .featured-post .featured-post-image img {
+          border-bottom: 0;
+          -webkit-border-radius: 15px 15px 0 0;
+          -moz-border-radius: 15px 15px 0 0;
+          -ms-border-radius: 15px 15px 0 0;
+          border-radius: 15px 15px 0 0;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -ms-box-shadow: none;
+          box-shadow: none; }
       .page-homepage .featured-post-container .featured-post .post-tile {
-        margin-top: 25px;
         width: 100%;
         right: auto;
         position: static;
+        -webkit-border-radius: 0 0 15px 15px;
+        -moz-border-radius: 0 0 15px 15px;
+        -ms-border-radius: 0 0 15px 15px;
+        border-radius: 0 0 15px 15px;
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
         transform: none; } }
+  .page-homepage .featured-post-container .mobile-title {
+    display: none; }
+  @media screen and (max-width: 767px) {
+    .page-homepage .featured-post-container {
+      background-position: center bottom 50px; }
+      .page-homepage .featured-post-container .desktop-title {
+        display: none; }
+      .page-homepage .featured-post-container .mobile-title {
+        display: block; } }
 
 .single-post-container .section-post-image {
   background-image: url(/blog/wp-content/uploads/2020/05/inside-page-bg-1920.png);
