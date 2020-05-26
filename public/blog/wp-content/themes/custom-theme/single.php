@@ -9,7 +9,7 @@ $thisPost = $post;
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                         <figure itemscope="" itemtype="http://schema.org/ImageObject" class="post-image">
-                            <img data-defer-src="<?php echo get_the_post_thumbnail_url($post); ?>" alt="<?php echo $post->post_title; ?>"/>
+                            <img data-defer-src="<?php echo get_the_post_thumbnail_url($post); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($post), '_wp_attachment_image_alt', true); ?>"/>
                         </figure>
                     </div>
                 </div>
