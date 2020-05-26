@@ -10,7 +10,7 @@
     ?>
     <div class="info-body padding-bottom-15">
         <figure itemscope="" itemtype="http://schema.org/ImageObject" class="width-100 fixed-image-height">
-            <img data-defer-src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true); ?>"/>
+            <img data-defer-src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($post), '_wp_attachment_image_alt', true); ?>"/>
         </figure>
         <div class="padding-right-15 padding-left-15">
             <h3 class="lato-black fs-20 line-height-24 padding-bottom-10 padding-top-10"><?php echo $post->post_title; ?></h3>

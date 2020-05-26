@@ -118,7 +118,7 @@ function getFeaturedPost($attrs = [])   {
                 <div class="row">
                     <div class="col-xs-12 col-md-10 col-md-offset-1 featured-post">
                         <figure itemscope="" itemtype="http://schema.org/ImageObject" class="featured-post-image">
-                            <img data-defer-src="<?php echo get_the_post_thumbnail_url($posts[0]); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($posts[0]->ID), '_wp_attachment_image_alt', true); ?>"/>
+                            <img data-defer-src="<?php echo get_the_post_thumbnail_url($posts[0]); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id($posts[0]), '_wp_attachment_image_alt', true); ?>"/>
                         </figure>
                         <a href="<?php echo get_permalink($posts[0]->ID); ?>" class="post-tile module featured">
                             <?php
