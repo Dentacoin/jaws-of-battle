@@ -58,6 +58,11 @@
             }
         }
         .post-content {
+            .post-content-field {
+                img {
+                    margin: 12px;    
+                }
+            }
             hr {
                 width: 300px;
                 margin-bottom: 10px;

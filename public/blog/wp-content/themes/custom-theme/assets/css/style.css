@@ -6451,6 +6451,8 @@ footer {
 @media screen and (max-width: 991px) {
   .single-post-container .section-post-content .sticky-socials {
     display: none; } }
+.single-post-container .section-post-content .post-content .post-content-field img {
+  margin: 12px; }
 .single-post-container .section-post-content .post-content hr {
   width: 300px;
   margin-bottom: 10px;
