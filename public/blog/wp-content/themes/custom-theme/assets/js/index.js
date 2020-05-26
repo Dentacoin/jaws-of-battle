@@ -183,3 +183,36 @@ function checkIfCookie()    {
         });
     }
 }
+
+// init bootstrap tooltips
+function initTooltips() {
+    if(jQuery('[data-toggle="tooltip"]')) {
+        jQuery('[data-toggle="tooltip"]').tooltip();
+    }
+}
+
+function initCustomCheckboxes() {
+    for (var i = 0, len = jQuery('.custom-checkbox-style').length; i < len; i+=1) {
+        if (!jQuery('.custom-checkbox-style').eq(i).hasClass('already-custom-style')) {
+            jQuery('.custom-checkbox-style').eq(i).prepend('<label for="'+jQuery('.custom-checkbox-style').eq(i).find('input[type="checkbox"]').attr('id')+'" class="custom-checkbox"></label>');
+            jQuery('.custom-checkbox-style').eq(i).addClass('already-custom-style');
+        }
+    }
+
+    jQuery('.custom-checkbox-style .custom-checkbox-input').unbind('change').on('change', function() {
+        if (jQuery(this).is(':checked')) {
+            jQuery(this).closest('.custom-checkbox-style').find('.custom-checkbox').html('✓');
+        } else {
+            jQuery(this).closest('.custom-checkbox-style').find('.custom-checkbox').html('');
+        }
+
+        if (jQuery(this).attr('data-radio-group') != undefined) {
+            for (var i = 0, len = jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').length; i < len; i+=1) {
+                if (!jQuery(this).is(jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i))) {
+                    jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i).prop('checked', false);
+                    jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i).closest('.custom-checkbox-style').find('.custom-checkbox').html('');
+                }
+            }
+        }
+    });
+}
