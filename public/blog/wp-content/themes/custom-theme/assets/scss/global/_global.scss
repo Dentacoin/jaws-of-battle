@@ -449,7 +449,7 @@ ol {
                 ul {
                     margin: 0;
                     padding: 0;
-                    width: 50%;
+                    width: 100%; 
                     display: inline-block;
                     vertical-align: text-bottom;
                     li {
@@ -525,7 +525,7 @@ ol {
                 }
             }
             .custom-triangle {
-                top: calc(100% - 20px);
+                top: calc(100% - 30px);
                 background-color: black;
                 width: 30px;
                 height: 30px;

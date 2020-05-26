@@ -6218,7 +6218,7 @@ ol li {
         background-color: #679dca;
         color: white; }
       .bottom-fixed-container .privacy-policy-cookie .customize-cookies .custom-triangle {
-        top: calc(100% - 20px);
+        top: calc(100% - 30px);
         background-color: black;
         width: 30px;
         height: 30px;
