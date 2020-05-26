@@ -293,7 +293,8 @@ Text Domain: dc
   font-size: 18px;
   font-family: "Lato-Black";
   color: white;
-  background-color: #b5bbbe;
+  background-color: #444444;
+  opacity: 0.7;
   padding: 8px 10px;
   min-width: 140px;
   margin: 0 5px;
@@ -307,10 +308,10 @@ Text Domain: dc
   -ms-border-radius: 6px;
   border-radius: 6px; }
   .shortcode.categories-list ul li a.active {
-    background-color: #444444; }
+    opacity: 1; }
   @media screen and (min-width: 992px) {
     .shortcode.categories-list ul li a:hover {
-      background-color: #444444; } }
+      opacity: 1; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .shortcode.categories-list ul li a {
     min-width: 100px; } }

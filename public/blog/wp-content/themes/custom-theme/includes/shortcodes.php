@@ -80,9 +80,10 @@ function postCategoriesList($attrs = [])   {
                 </li>
                 <?php
                 foreach ($categories as $category) {
+                    $termMeta = get_term_meta($category->term_id, null, true);
                     ?>
                         <li class="inline-block-top">
-                            <a href="<?php echo get_category_link($category->term_id); ?>#categories-list" <?php if (!empty($attrs['type']) && $attrs['type'] == $category->slug) { ?> class="active" <?php } ?> itemprop="url"><span itemprop="name"><?php echo $category->name; ?></span></a>
+                            <a style="background-color: <?php echo $termMeta['wpcf-category-color'][0]; ?>;" href="<?php echo get_category_link($category->term_id); ?>#categories-list" <?php if (!empty($attrs['type']) && $attrs['type'] == $category->slug) { ?> class="active" <?php } ?> itemprop="url"><span itemprop="name"><?php echo $category->name; ?></span></a>
                         </li>
                     <?php
                 }
