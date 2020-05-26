@@ -28,7 +28,22 @@ $current_url = home_url(add_query_arg(array(),$wp->request));
     <?php wp_head(); ?>
     <?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
         <!-- Google Tag Manager -->
-
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108398439-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            <?php if (empty($_COOKIE['performance_cookies'])) {
+                ?>
+                gtag('config', 'UA-108398439-6', {'anonymize_ip': true});
+                <?php
+            } else {
+                ?>
+                gtag('config', 'UA-108398439-6');
+                <?php
+            }
+            ?>
+        </script>
         <!-- End Google Tag Manager -->
     <?php endif;
     ?>

@@ -62,7 +62,7 @@ class Controller extends BaseController
         // add item to the sitemap (url, date, priority, freq)
 
         $sitemap->add(URL::to('/'), '2019-08-25T20:10:00+02:00', '1.0', 'monthly');
-        $sitemap->add(URL::to('withdraw-dentacare-dcn'), '2019-08-25T20:10:00+02:00', '0.5', 'monthly');
+        $sitemap->add(URL::to('/blog'), '2020-05-25T20:10:00+02:00', '1.0', 'weekly');
 
         /*//getting all pagination pages for testimonials
         for($i = 1, $length = (new UserExpressionsController())->getPagesCount(); $i <= $length; $i+=1) {

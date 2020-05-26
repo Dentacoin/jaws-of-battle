@@ -20,7 +20,7 @@ function job_add_styles_and_scripts() {
 
     wp_enqueue_script( 'bootbox_script', get_stylesheet_directory_uri(). '/assets/libs/bootbox.min.js', array(), false, true );
 
-    wp_enqueue_script('custom_script_helper', get_template_directory_uri() . '/assets/js/basic.js', array(), '1.0.1', true);
+    wp_enqueue_script('basic_custom_script', 'https://dentacoin.com/assets/js/basic.js', array(), '1.0.1', true);
 
     wp_enqueue_script('custom_script', get_template_directory_uri() . '/assets/js/index.js', array(), '1.0.1', true);
 

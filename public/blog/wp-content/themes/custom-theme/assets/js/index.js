@@ -10,6 +10,10 @@ jQuery(window).on('scroll', function()  {
     onDesktopScrollMakeStickySidebarSinglePostPage();
 });
 
+jQuery(document).ready(function()   {
+    checkIfCookie();
+});
+
 //load images after website load
 if(jQuery('img[data-defer-src]').length) {
     jQuery(window).on('scroll', function(){
@@ -133,5 +137,49 @@ function onDesktopScrollMakeStickySidebarSinglePostPage() {
                 jQuery('.post-content').removeClass('col-md-offset-3');
             }
         }
+    }
+}
+
+function checkIfCookie()    {
+    if (jQuery('.privacy-policy-cookie').length > 0)  {
+        jQuery('.privacy-policy-cookie .accept-all').click(function()    {
+            basic.cookies.set('performance_cookies', 1);
+            basic.cookies.set('functionality_cookies', 1);
+            basic.cookies.set('marketing_cookies', 1);
+            basic.cookies.set('strictly_necessary_policy', 1);
+
+            window.location.reload();
+        });
+
+        console.log(jQuery('.adjust-cookies').length, 'jQuery(\'.adjust-cookies\')');
+
+        jQuery('.adjust-cookies').click(function() {
+            jQuery('.customize-cookies').remove();
+
+            jQuery('.privacy-policy-cookie').append('<div class="customize-cookies"><button class="close-customize-cookies close-customize-cookies-popup">×</button><div class="text-center"><img src="/wp-content/themes/hestia-child/assets/images/cookie-icon.svg" alt="Cookie icon" class="cookie-icon"/></div><div class="text-center padding-bottom-20 fs-20">Select cookies to accept:</div><div class="cookies-options-list"><ul><li class="custom-checkbox-style"><input type="checkbox" class="custom-checkbox-input" id="performance-cookies"/><label class="dentacoin-login-gateway-fs-15 custom-checkbox-label" for="performance-cookies">Performance cookies <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="These cookies collect data for statistical purposes on how visitors use a website, they don’t contain personal data and are used to improve user experience."></i></label></li><li class="custom-checkbox-style"><input type="checkbox" class="custom-checkbox-input" id="marketing-cookies"/><label class="dentacoin-login-gateway-fs-15 custom-checkbox-label" for="marketing-cookies">Marketing cookies <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="Marketing cookies are used e.g. to deliver advertisements more relevant to you or limit the number of times you see an advertisement."></i></label></li></ul></div><div class="text-center actions"><a href="javascript:void(0);" class="cancel-btn margin-right-10 close-customize-cookies-popup">CANCEL</a><a href="javascript:void(0);" class="save-btn custom-cookie-save">SAVE</a></div><div class="custom-triangle"></div></div>');
+
+            initCustomCheckboxes();
+            initTooltips();
+
+            jQuery('.close-customize-cookies-popup').click(function() {
+                jQuery('.customize-cookies').remove();
+            });
+
+            jQuery('.custom-cookie-save').click(function() {
+                basic.cookies.set('strictly_necessary_policy', 1);
+
+                if(jQuery('#marketing-cookies').is(':checked')) {
+                    console.log('set marketing');
+                    basic.cookies.set('marketing_cookies', 1);
+                }
+
+                if(jQuery('#performance-cookies').is(':checked')) {
+                    console.log('set performance');
+                    basic.cookies.set('performance_cookies', 1);
+                }
+
+                window.location.reload();
+            });
+        });
     }
 }
