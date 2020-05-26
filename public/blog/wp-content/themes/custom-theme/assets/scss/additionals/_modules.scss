@@ -57,6 +57,7 @@
             overflow: hidden;
             img {
                 width: 100%;
+                @include simple_transition(.3s);
                 @include vertical-horizontal-align(absolute);
             }
             @include breakpoint($md) {
@@ -66,7 +67,7 @@
                         max-width: 120%;
                     }
                 }
-            } 
+            }
         }
         h3 {
             color: black;

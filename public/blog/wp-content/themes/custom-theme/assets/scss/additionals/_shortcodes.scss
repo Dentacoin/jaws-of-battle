@@ -18,6 +18,11 @@
                     &.active {
                         background-color: #444444;
                     }
+                    @include breakpoint($md) {
+                        &:hover {
+                            background-color: #444444;
+                        } 
+                    }
                 }
                 @include breakpoint($sm-only) {
                     a {

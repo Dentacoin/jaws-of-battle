@@ -164,6 +164,11 @@ Text Domain: dc
     overflow: hidden; }
     .module.post-tile .fixed-image-height img {
       width: 100%;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -ms-transition: 0.3s;
+      transition: 0.3s;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -298,6 +303,9 @@ Text Domain: dc
   border-radius: 6px; }
   .shortcode.categories-list ul li a.active {
     background-color: #444444; }
+  @media screen and (min-width: 992px) {
+    .shortcode.categories-list ul li a:hover {
+      background-color: #444444; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .shortcode.categories-list ul li a {
     min-width: 100px; } }
