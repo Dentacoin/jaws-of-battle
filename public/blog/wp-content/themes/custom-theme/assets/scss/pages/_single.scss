@@ -38,6 +38,9 @@
                         padding: 0 7px;
                     }
                     &:last-child {
+                        span {
+                            color: #aaa;  
+                        }
                         &:after {
                             display: none;
                         }

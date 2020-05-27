@@ -59,7 +59,7 @@ $current_url = home_url(add_query_arg(array(),$wp->request));
             </figure>
             <div class="col-xs-7 col-sm-6 inline-block text-right padding-right-50 padding-right-xs-10 padding-left-xs-0 mobile-app-download-btns">
                 <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block">
-                    <a href="https://play.google.com/apps/testing/com.DentaCare.JawsOfBattle" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.DentaCare.JawsOfBattle&hl=en_US" target="_blank">
                         <img data-defer-src="<?php echo RESOURCES_PREFIX; ?>wp-content/uploads/2020/05/google-play-badge.svg" class="max-width-150 width-100 margin-right-10" alt="Google play download button"/>
                     </a>
                 </figure>

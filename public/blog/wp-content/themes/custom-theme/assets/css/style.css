@@ -293,8 +293,7 @@ Text Domain: dc
   font-size: 18px;
   font-family: "Lato-Black";
   color: white;
-  background-color: #444444;
-  opacity: 0.7;
+  background-color: #b5bbbe;
   padding: 8px 10px;
   min-width: 140px;
   margin: 0 5px;
@@ -307,11 +306,8 @@ Text Domain: dc
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px; }
-  .shortcode.categories-list ul li a.active {
-    opacity: 1; }
-  @media screen and (min-width: 992px) {
-    .shortcode.categories-list ul li a:hover {
-      opacity: 1; } }
+.shortcode.categories-list ul li:first-child a:hover {
+  background-color: #444444; }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .shortcode.categories-list ul li a {
     min-width: 100px; } }
@@ -6442,6 +6438,8 @@ footer {
     .single-post-container .section-post-content .breadcrumbs ul li:after {
       content: ' / ';
       padding: 0 7px; }
+    .single-post-container .section-post-content .breadcrumbs ul li:last-child span {
+      color: #aaa; }
     .single-post-container .section-post-content .breadcrumbs ul li:last-child:after {
       display: none; }
 .single-post-container .section-post-content .sticky-socials .widget {

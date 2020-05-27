@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row fs-0 padding-bottom-35">
                 <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block col-xs-6 text-right">
-                    <a href="https://play.google.com/apps/testing/com.DentaCare.JawsOfBattle" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.DentaCare.JawsOfBattle&hl=en_US" target="_blank">
                         <img data-defer-src="<?php echo RESOURCES_PREFIX; ?>wp-content/uploads/2020/05/google-play-badge.svg" class="max-width-150 width-100 margin-right-10" alt="Google play download button"/>
                     </a>
                 </figure>

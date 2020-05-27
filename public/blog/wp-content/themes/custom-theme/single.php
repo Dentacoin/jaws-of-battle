@@ -48,7 +48,7 @@ $thisPost = $post;
                 </div>
                 <div class="col-xs-12 col-md-6 post-content inline-block-top">
                     <h1 class="fs-40 fs-xs-28 line-height-46 line-height-xs-34 text-center lato-black padding-bottom-30"><?php echo $post->post_title; ?></h1>
-                    <div class="padding-bottom-50 line-height-26 fs-16 post-content-field">
+                    <div class="padding-bottom-50 fs-16 post-content-field">
                         <?php
                         if(have_posts()) :
                             while(have_posts()) :

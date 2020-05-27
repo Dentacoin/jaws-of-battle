@@ -72,18 +72,20 @@ function postCategoriesList($attrs = [])   {
     ));
 
     if (!empty($categories)) {
+        $stylesArr = array();
         ?>
         <nav class="shortcode categories-list <?php echo $attrs['class']; ?>" id="categories-list">
             <ul itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                 <li class="inline-block-top">
-                    <a href="<?php echo site_url(); ?>#categories-list" <?php if (!empty($attrs['type']) && $attrs['type'] == 'all') { ?> class="active" <?php } ?> itemprop="url"><span itemprop="name">ALL</span></a>
+                    <a href="<?php echo site_url(); ?>#categories-list" <?php if (!empty($attrs['type']) && $attrs['type'] == 'all') { ?> style="background-color: #444444;" <?php } ?> itemprop="url"><span itemprop="name">ALL</span></a>
                 </li>
                 <?php
                 foreach ($categories as $category) {
                     $termMeta = get_term_meta($category->term_id, null, true);
+                    $stylesArr['category-btn-'.$category->term_id] = $termMeta['wpcf-category-color'][0];
                     ?>
                         <li class="inline-block-top">
-                            <a style="background-color: <?php echo $termMeta['wpcf-category-color'][0]; ?>;" href="<?php echo get_category_link($category->term_id); ?>#categories-list" <?php if (!empty($attrs['type']) && $attrs['type'] == $category->slug) { ?> class="active" <?php } ?> itemprop="url"><span itemprop="name"><?php echo $category->name; ?></span></a>
+                            <a class="<?php echo 'category-btn-'.$category->term_id; ?>" <?php if (!empty($attrs['type']) && $attrs['type'] == $category->slug) { ?> style="background-color: <?php echo $termMeta['wpcf-category-color'][0]; ?> !important;" <?php } ?> href="<?php echo get_category_link($category->term_id); ?>#categories-list" itemprop="url"><span itemprop="name"><?php echo $category->name; ?></span></a>
                         </li>
                     <?php
                 }
@@ -91,6 +93,17 @@ function postCategoriesList($attrs = [])   {
             </ul>
         </nav>
         <?php
+        if (!empty($stylesArr)) {
+            ?>
+            <style>
+                <?php
+                foreach ($stylesArr as $class => $color) {
+                    echo '.'.$class . ':hover{background-color: '.$color.' !important;}';
+                }
+                ?>
+            </style>
+            <?php
+        }
     }
 
     return ob_get_clean();
