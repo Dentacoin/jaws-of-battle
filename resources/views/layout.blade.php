@@ -63,7 +63,7 @@
 <footer class="padding-bottom-30 padding-top-40 margin-top-20 container">
     <div class="row fs-0 padding-bottom-15">
         <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block col-xs-6 text-right">
-            <a href="https://play.google.com/apps/testing/com.DentaCare.JawsOfBattle" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.DentaCare.JawsOfBattle&hl=en_US" target="_blank">
                 <img src="/assets/uploads/google-play-badge.svg" class="width-100 max-width-170" alt="Google Play button"/>
             </a>
         </figure>
