@@ -28,8 +28,4 @@ yarn-error.log
 /public/blog/wp-content/uploads/
 /public/blog/wp-content/mu-plugins/
 /public/blog/wp-content/wp-cache-config.php
-<<<<<<< HEAD
 /public/blog/wp-content/plugins/hello.php
-=======
-/public/blog/wp-content/plugins/hello.php
->>>>>>> aae720cc12b683030176905234c3d86a19987b4e
