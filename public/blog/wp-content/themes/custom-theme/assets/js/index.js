@@ -11,7 +11,7 @@ jQuery(window).on('scroll', function()  {
 });
 
 jQuery(document).ready(function()   {
-    checkIfCookie();
+
 });
 
 //load images after website load
@@ -140,79 +140,8 @@ function onDesktopScrollMakeStickySidebarSinglePostPage() {
     }
 }
 
-function checkIfCookie()    {
-    if (jQuery('.privacy-policy-cookie').length > 0)  {
-        jQuery('.privacy-policy-cookie .accept-all').click(function()    {
-            basic.cookies.set('performance_cookies', 1);
-            basic.cookies.set('functionality_cookies', 1);
-            basic.cookies.set('marketing_cookies', 1);
-            basic.cookies.set('strictly_necessary_policy', 1);
-
-            window.location.reload();
-        });
-
-        console.log(jQuery('.adjust-cookies').length, 'jQuery(\'.adjust-cookies\')');
-
-        jQuery('.adjust-cookies').click(function() {
-            jQuery('.customize-cookies').remove();
-
-            jQuery('.privacy-policy-cookie').append('<div class="customize-cookies"><button class="close-customize-cookies close-customize-cookies-popup">×</button><div class="text-center"><img src="/blog/wp-content/themes/custom-theme/assets/images/cookie-icon.svg" alt="Cookie icon" class="cookie-icon"/></div><div class="text-center padding-bottom-20 fs-20">Select cookies to accept:</div><div class="cookies-options-list"><ul><li class="custom-checkbox-style"><input type="checkbox" class="custom-checkbox-input" id="performance-cookies"/><label class="dentacoin-login-gateway-fs-15 custom-checkbox-label" for="performance-cookies">Performance cookies <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="These cookies collect data for statistical purposes on how visitors use a website, they don’t contain personal data and are used to improve user experience."></i></label></li><li class="custom-checkbox-style"><input type="checkbox" class="custom-checkbox-input" id="marketing-cookies"/><label class="dentacoin-login-gateway-fs-15 custom-checkbox-label" for="marketing-cookies">Marketing cookies <i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" title="Marketing cookies are used e.g. to deliver advertisements more relevant to you or limit the number of times you see an advertisement."></i></label></li></ul></div><div class="text-center actions"><a href="javascript:void(0);" class="cancel-btn margin-right-10 close-customize-cookies-popup">CANCEL</a><a href="javascript:void(0);" class="save-btn custom-cookie-save">SAVE</a></div><div class="custom-triangle"></div></div>');
-
-            initCustomCheckboxes();
-            initTooltips();
-
-            jQuery('.close-customize-cookies-popup').click(function() {
-                jQuery('.customize-cookies').remove();
-            });
-
-            jQuery('.custom-cookie-save').click(function() {
-                basic.cookies.set('strictly_necessary_policy', 1);
-
-                if(jQuery('#marketing-cookies').is(':checked')) {
-                    console.log('set marketing');
-                    basic.cookies.set('marketing_cookies', 1);
-                }
-
-                if(jQuery('#performance-cookies').is(':checked')) {
-                    console.log('set performance');
-                    basic.cookies.set('performance_cookies', 1);
-                }
-
-                window.location.reload();
-            });
-        });
-    }
-}
-
-// init bootstrap tooltips
-function initTooltips() {
-    if(jQuery('[data-toggle="tooltip"]')) {
-        jQuery('[data-toggle="tooltip"]').tooltip();
-    }
-}
-
-function initCustomCheckboxes() {
-    for (var i = 0, len = jQuery('.custom-checkbox-style').length; i < len; i+=1) {
-        if (!jQuery('.custom-checkbox-style').eq(i).hasClass('already-custom-style')) {
-            jQuery('.custom-checkbox-style').eq(i).prepend('<label for="'+jQuery('.custom-checkbox-style').eq(i).find('input[type="checkbox"]').attr('id')+'" class="custom-checkbox"></label>');
-            jQuery('.custom-checkbox-style').eq(i).addClass('already-custom-style');
-        }
-    }
-
-    jQuery('.custom-checkbox-style .custom-checkbox-input').unbind('change').on('change', function() {
-        if (jQuery(this).is(':checked')) {
-            jQuery(this).closest('.custom-checkbox-style').find('.custom-checkbox').html('✓');
-        } else {
-            jQuery(this).closest('.custom-checkbox-style').find('.custom-checkbox').html('');
-        }
-
-        if (jQuery(this).attr('data-radio-group') != undefined) {
-            for (var i = 0, len = jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').length; i < len; i+=1) {
-                if (!jQuery(this).is(jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i))) {
-                    jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i).prop('checked', false);
-                    jQuery('[data-radio-group="'+jQuery(this).attr('data-radio-group')+'"]').eq(i).closest('.custom-checkbox-style').find('.custom-checkbox').html('');
-                }
-            }
-        }
+if (typeof(dcnCookie) != undefined) {
+    dcnCookie.init({
+        'google_app_id' : 'UA-97167262-2'
     });
 }
