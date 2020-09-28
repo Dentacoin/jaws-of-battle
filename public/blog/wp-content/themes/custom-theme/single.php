@@ -29,16 +29,16 @@ $thisPost = $post;
                 <div class="col-xs-12 col-md-10 col-md-offset-1 lato-bold">
                     <nav>
                         <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                            <li class="inline-block" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="<?php echo site_url(''); ?>" itemscope="" itemtype="http://schema.org/ListItem" itemprop="url"><span itemprop="title">HOME</span></a></li>
+                            <li class="inline-block"  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo site_url(''); ?>" itemprop="item"><span itemprop="title">HOME</span></a></li>
 
                             <?php
                             if (!empty($categories)) {
                                 ?>
-                                <li class="inline-block" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="<?php echo get_category_link($categories[0]->term_id); ?>#categories-list" itemscope="" itemtype="http://schema.org/ListItem" itemprop="url"><span itemprop="title"><?php echo $categories[0]->name; ?></span></a></li>
+                                <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo get_category_link($categories[0]->term_id); ?>#categories-list" itemprop="item"><span itemprop="title"><?php echo $categories[0]->name; ?></span></a></li>
                                 <?php
                             }
                             ?>
-                            <li class="inline-block" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span itemprop="title"><?php echo mb_substr(strip_tags($post->post_title), 0, 15); ?>...</span><meta itemprop="url" content="CURRENT URL"></li></ul>
+                            <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="title"><?php echo mb_substr(strip_tags($post->post_title), 0, 15); ?>...</span><meta itemprop="url" content="CURRENT URL"></li></ul>
                     </nav>
                 </div>
             </div>
