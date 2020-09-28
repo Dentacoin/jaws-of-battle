@@ -146,6 +146,7 @@ if (typeof(dcnCookie) != 'undefined') {
     });
 }
 
+// doing this interval to fix broken url review plugin
 if (jQuery('body').hasClass('single')) {
     var updatedLinkPreview = false;
     var updateLinkPreview = setInterval(function() {
