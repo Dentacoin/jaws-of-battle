@@ -145,3 +145,16 @@ if (typeof(dcnCookie) != undefined) {
         'google_app_id' : 'UA-97167262-2'
     });
 }
+
+if (jQuery('body').hasClass('single')) {
+    var updatedLinkPreview = false;
+    var updateLinkPreview = setInterval(function() {
+        if (updatedLinkPreview) {
+            clearInterval(updateLinkPreview);
+        } else {
+            if (jQuery('.guteurlsBox p').length && jQuery('.guteurlsBox p').html().length > 250) {
+                jQuery('.guteurlsBox p').html(jQuery('.guteurlsBox p').html().substring(0, 250) + '...');
+            }
+        }
+    }, 500);
+}

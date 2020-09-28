@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site and in the editor.
+ * components-placeholder wp-block-embed
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-good-url-preview-box-gurlpb {
+
+}
+
+div.gurlpbGutenbergBox {
+   border: 0px solid #aaa;
+}
+
+div.gurlpbGutenbergBox div.gurlpbGutenbergUrl {
+    border: 1px solid #aaa;
+    padding: 4px;
+    font-size: 11px;
+    
+}
+
+
+div.gurlpbGutenbergBox button {
+	margin: 15px 30px 15px auto;
+    padding: 10px;
+    font-size: 20px;    
+    
+}
+
+div.gurlpbGutenbergBox div.gurlpbGutenbergHP {
+	margin: 15px auto 15px auto;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    float: right;
+}
+
+button.gurlpbGutenbergButtonRefresh { 
+    display:none;
+}
+button.gurlpbGutenbergButtonView { 
+    
+}
+
+div.gurlpbGutenbergPreview {
+    visibility: hidden;
+}

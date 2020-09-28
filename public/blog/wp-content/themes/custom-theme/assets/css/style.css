@@ -6125,6 +6125,11 @@ ol li {
     .slick-slider .slick-next {
       right: -10px; } }
 
+.guteurlsBox img {
+  margin: 0 !important; }
+.guteurlsBox .guteurlsBottom {
+  display: none !important; }
+
 header {
   position: absolute;
   left: 0;

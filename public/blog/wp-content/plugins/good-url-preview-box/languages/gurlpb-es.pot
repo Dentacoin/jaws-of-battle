@@ -1,0 +1,275 @@
+# Copyright (C) 2013 exopin
+# This file is distributed under the same license as the exopin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: exopin 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/exopin\n"
+"POT-Creation-Date: 2013-03-27 18:00:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. Plugin Name of the plugin/theme
+msgid "guteurls"
+msgstr "guteurls"
+
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.guteurls.de/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Widget test"
+msgstr "WIDGET TEST"
+
+#. Author of the plugin/theme
+msgid "eby"
+msgstr "Martin Schädler"
+
+#. Language
+msgid "lang"
+msgstr "es"
+
+#. Settings language
+msgid "in-english"
+msgstr "Show this page in english / Muestra esta página en Inglés."
+
+#.
+msgid "URL-Preview"
+msgstr "URL preestreno"
+
+#. Settings Title
+msgid "Settings"
+msgstr "Ajustes"
+
+#. Settings Box1 text: The use of the plug-in is free. <br /> <br />The plugin gets the preview data from the service guteurls.de. <br /> This service is free to use for non-commercial users with low page view numbers. <br /><br />Otherwise you have to register at guteurls.de.
+msgid "This-plugin-is-for-free-usage-for-no-commercial-websites-with-few-pageviews"
+msgstr "El uso del plug-in es gratuito. <br /> <br /> El plug-in obtiene los datos de vista previa de la guteurls.de servicio. <br /> Este servicio es de uso gratuito para los usuarios no comerciales con baja visión números de página. <br /> <br /> De lo contrario, usted tiene que registrarse en guteurls.de."
+
+#. Settings Box1 text: In the case <a href=\"%1$s\" target=\"_blank\">click here</a> and the added your license key here:
+msgid "Else-purchase-click here %1$s."
+msgstr "En el caso <a href=\"%1$s\" target=\"_blank\"> clic aquí </a> y la añade la clave de licencia aquí:"
+
+#. Settings optional
+msgid "optional"
+msgstr "(Opcional)"
+
+#. Settings Invalid licence key
+msgid "Invalid-licence-key"
+msgstr "clave de licencia no válida!"
+
+#. Settings Box2 title
+msgid "How-many-URL-Previews?"
+msgstr "¿Cuántos Avances de URL?"
+
+#. Settings Box2 Line 1
+msgid "Add-maximal-one"
+msgstr "Añadir máxima Vista previa de una URL en"
+
+#. Settings Box2 line 2
+msgid "and-add-it."
+msgstr "<b>cada artículo</b> y agregar al fondo."
+
+#. Settings Box2 Line 3
+msgid "Add-one-URL,"
+msgstr "Añadir máxima Vista previa de una URL por <b>el párrafo</b>"
+
+#. Settings Box2 Line 4
+msgid "one-per-P-Tag."
+msgstr "uno por HTML Tag <b>P</b> (&lt;p&gt; párrafo &lt;/p&gt;)"
+
+#. Settings Box3 title
+msgid "Change-article-link?"
+msgstr "Cambiar el artículo enlace del título?"
+
+
+#. Settings Box3 Line 1
+msgid "Your-title-is-clickable-to"
+msgstr "su título es hacer clic y enlaces a"
+
+#. Settings Box3 Line 2
+msgid "the-first-found-URL."
+msgstr "la primera URL encontrado."
+
+#. Settings Box3 Line 3
+msgid "your-own-article."
+msgstr "en nuestro propio artículo (comportamiento estándar de Wordpress)"
+
+msgid "setting-manual-URL"
+msgstr "<B>cajas manualmente</b> set de vista previa,"
+
+msgid "setting-manual-URL2"
+msgstr "por escrito <b>[urlpreviewbox url=\"&lt;url&gt;\"]</b> en el texto.<br /><br /><div style=\"background-color:#ffffff\"><u><b>Ejemplo de texto en el blog</b></u>:<br /><br />Este es un blog de texto y por debajo <br />se debe mostrar en la vista previa <br />de URL. Por lo tanto, sólo tengo que <br /> escribir en mi texto lo siguiente. <br />[urlpreviewbox url=\"http://alien.de\"]<br />Y ahora mi blog de texto termina aquí.<br /><br /></div>"
+
+msgid "setting-manual-URL3"
+msgstr "O en el editor de texto hace clic<br /> en el botón 'URL box'."
+
+msgid "Expert_settings"
+msgstr "Ajustes para los expertos"
+
+msgid "Optional. You can let these values empty."
+msgstr "Opcional. Usted puede dejar estos valores en estándar."
+
+msgid "Standard. White background color."
+msgstr "Estándar. color de fondo blanco."
+
+msgid "Transparent"
+msgstr "Transparente"
+
+msgid "Standard animation."
+msgstr "animación estándar"
+
+msgid "No animation"
+msgstr "sin animación"
+
+msgid "Use a gif from"
+msgstr "P.ej. usar una imagen GIF a partir de <a href=\"http://loading.io\" target=\"_blank\">http://loading.io</a>"
+
+msgid "Show URL preview box in excerpt"
+msgstr "Mostrar cuadro de vista previa de URL en extracto"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "Hide images"
+msgstr "Ocultar imágenes"
+
+msgid "Url preview box size"
+msgstr "Tamaño del cuadro de vista preliminar de URL"
+
+msgid "tiny"
+msgstr "menor"
+
+msgid "small"
+msgstr "pequeña"
+
+msgid "standard"
+msgstr "estándar"
+
+msgid "tall"
+msgstr "alto"
+
+#. admin - setting page - alert - misuseOfPlugin
+msgid "misuseOfPlugin"
+msgstr "Uso indebido del servicio de caja de previsualización https://guteURLs.de!"
+
+#. admin - setting page - alert - The plugin has stopped the work, because your website
+msgid "misuseOfPlugin_PleasePurchaseOnlineAt https://guteurls.de"
+msgstr "El plugin ha parado el trabajo, porque su sitio web: <br /> - es comercial<br /> - tiene banner publicitario, <br /> - o más de 7.000 visitas por semana. <br /><br />Por favor, contacte <a href=\"mailto:infomail@guteurls.de\">infomail@guteurls.de</a> para una reactivación. <br /><br />See <a href=\"https://guteurls.de/plan.php\" target=\"_blank\">https://guteurls.de/plan.php</a>"
+
+#. admin - setting page - alert guteURLsNeedYourEmailAddress
+msgid "guteURLsNeedYourEmailAddress"
+msgstr "https://guteURLs.de API necesita su dirección de correo electrónico de contacto."
+
+#. admin - setting page - alert
+msgid "pleaseEnterYourContactEmailAddress"
+msgstr "Para que la interfaz API pueda seguir proporcionándole datos, necesita su dirección de correo electrónico. <br /><br />Valid dirección de correo electrónico: "
+
+#. admin - cache page
+msgid "Reset one Preview Box from cache"
+msgstr "Restablecer un cuadro de vista previa desde la caché"
+
+#. admin - cache page
+msgid "Reset data for one single preview box (force reload image and description)."
+msgstr "Reajuste de los datos para una sola caja de vista previa (carga forzada de la imagen y descripción)."
+
+#. admin - cache page
+msgid "Reset URL"
+msgstr "Restablecer URL"
+
+#. admin - cache page
+msgid "or"
+msgstr "o"
+
+#. admin - cache page
+msgid "list all my URLs"
+msgstr "Listar todas mis URLs"
+
+
+
+
+
+#. invalid email address
+msgid "Invalid-email"
+msgstr "Dirección de correo electrónico no válida"
+
+#. Get your key
+msgid "Get-your-key"
+msgstr "Obtenga su clave"
+
+#. Register now.
+msgid "Register-now"
+msgstr "Regístrate ahora."
+
+#. Get your private key.
+msgid "Get-your-private-key"
+msgstr "Obtenga su clave privada"
+
+#. Get Licence Key
+msgid "Get-Licence-Key"
+msgstr "Obtener clave de licencia"
+
+#. Use your key
+msgid "Use-your-key"
+msgstr "Usa tu llave"
+
+#. Manually enter licence key
+msgid "Manually-enter-licence-key"
+msgstr "Ingrese manualmente la clave de licencia."
+
+#. Please complete form
+msgid "Please-complete-form"
+msgstr "Por favor complete el formulario."
+
+#. Go free
+msgid "Go-free"
+msgstr "Ir gratis (uso privado)"
+
+#. Maximum 10 preview boxes
+msgid "Maximal-10-preview-boxes"
+msgstr "Máximo 10 cajas de vista previa"
+
+#. You can always upgrade
+msgid "You-can-always-upgrade"
+msgstr "Siempre puedes actualizar."
+
+#. Save a little money
+msgid "Save-a-little-money"
+msgstr "Ahorra algo de dinero"
+
+#. Clickable text
+msgid "Clickable-text"
+msgstr "Texto clicable"
+
+#. Default text.
+msgid "Default-text."
+msgstr "Impago"
+
+#. Example: Click here to open page
+msgid "Example-Click-here"
+msgstr "Ejemplo: Haga clic aquí"
+
+#. Description length
+msgid "Description-length"
+msgstr "longitud de texto"
+
+#. Max.
+msgid "Max."
+msgstr "Máx"
+
+#. Row
+msgid "Row"
+msgstr "Fila"
+
+#. Rows
+msgid "Rows"
+msgstr "Filas"
+
+#. Full text (default)
+msgid "Full-text-default"
+msgstr "Texto completo (por defecto)"

@@ -1,0 +1,275 @@
+# Copyright (C) 2013 exopin
+# This file is distributed under the same license as the exopin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: exopin 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/exopin\n"
+"POT-Creation-Date: 2013-03-27 18:00:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. Plugin Name of the plugin/theme
+msgid "guteurls"
+msgstr "guteurls"
+
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.guteurls.de/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Widget test"
+msgstr "WIDGET TEST"
+
+#. Author of the plugin/theme
+msgid "eby"
+msgstr "Martin Schädler"
+
+#. Language
+msgid "lang"
+msgstr "cn"
+
+#. Settings language
+msgid "in-english"
+msgstr "Show this page in english / 显示在英文页面."
+
+#. Admin Menu
+msgid "URL-Preview"
+msgstr "网址预览"
+
+#. Settings Title
+msgid "Settings"
+msgstr "设置"
+
+#. Settings Box1 text: The use of the plug-in is free. <br /> <br />The plugin gets the preview data from the service guteurls.de. <br /> This service is free to use for non-commercial users with low page view numbers. <br /><br />Otherwise you have to register at guteurls.de.
+msgid "This-plugin-is-for-free-usage-for-no-commercial-websites-with-few-pageviews"
+msgstr "使用该插件是免费的。 <br/><br/>该插件从服务guteurls.de获取预览数据。 <br/>这项服务是免费使用的非商业用户提供低页面浏览数。 <br/><br/>否则，您必须在guteurls.de登记。"
+
+#. Settings Box1 text: In the case <a href=\"%1$s\" target=\"_blank\">click here</a> and the added your license key here:
+msgid "Else-purchase-click here %1$s."
+msgstr "在这种情况下<a href=\"%1$s\" target=\"_blank\">点击这里</a>这里添加您的许可证密钥："
+
+#. Settings optional
+msgid "optional"
+msgstr "(可选的)"
+
+#. Settings Invalid licence key
+msgid "Invalid-licence-key"
+msgstr "无效许可证密钥！"
+
+#. Settings Box2 title
+msgid "How-many-URL-Previews?"
+msgstr "有多少网址预览?"
+
+#. Settings Box2 Line 1
+msgid "Add-maximal-one"
+msgstr "<b>每篇文章</b>最大的一个网址预览，"
+
+#. Settings Box2 line 2
+msgid "and-add-it."
+msgstr "并在底部添加预览。"
+
+#. Settings Box2 Line 3
+msgid "Add-one-URL,"
+msgstr "<b>每款</b>最大的一个网址预览。"
+
+#. Settings Box2 Line 4
+msgid "one-per-P-Tag."
+msgstr "一个预HTML标签 <b>P</b> (&lt;p&gt; text &lt;/p&gt;)"
+
+#. Settings Box3 title
+msgid "Change-article-link?"
+msgstr "每款最大的一个网址预览。一个预HTML标签"
+
+
+#. Settings Box3 Line 1
+msgid "Your-title-is-clickable-to"
+msgstr "您的标题点击和链接"
+
+#. Settings Box3 Line 2
+msgid "the-first-found-URL."
+msgstr "第一个找到的网址."
+
+#. Settings Box3 Line 3
+msgid "your-own-article."
+msgstr "你自己的文章（标准的WordPress行为）."
+
+msgid "setting-manual-URL"
+msgstr "<b>手动</b>设置预览框，在文本中写入"
+
+msgid "setting-manual-URL2"
+msgstr "<b>[urlpreviewbox url=\"&lt;url&gt;\"]</b>。<br /><br /><div style=\"background-color:#ffffff\"><u><b>博客文字示例：</b></u>:<br /><br />这是一个博客文本，<br />下面应该显示在URL预览中。<br />因此我只需要在我的文本中写下面的内容。 <br />[urlpreviewbox url=\"http://alien.de\"]<br />现在我的博客文本在这里结束。<br /><br /></div>"
+
+msgid "setting-manual-URL3"
+msgstr "或者在文本编辑器中，<br />单击按钮'URL box'上的"
+
+msgid "Expert_settings"
+msgstr "专家设置"
+
+msgid "Optional. You can let these values empty."
+msgstr "可选的。 你可以让这些值在标准。"
+
+msgid "Standard. White background color."
+msgstr "标准。 白色背景颜色。"
+
+msgid "Transparent"
+msgstr "透明"
+
+msgid "Standard animation."
+msgstr "标准动画"
+
+msgid "No animation"
+msgstr "没有动画"
+
+msgid "Use a gif from"
+msgstr "例如。 使用来自 <a href=\"http://loading.io\" target=\"_blank\">http://loading.io</a> 的gif图片"
+
+msgid "Show URL preview box in excerpt"
+msgstr "在摘录中显示网址预览框"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Hide images"
+msgstr "隐藏图像"
+
+msgid "Url preview box size"
+msgstr "网址预览框大小"
+
+msgid "tiny"
+msgstr "更小"
+
+msgid "small"
+msgstr "小"
+
+msgid "standard"
+msgstr "标准"
+
+msgid "tall"
+msgstr "高"
+
+
+#. admin - setting page - alert - misuseOfPlugin
+msgid "misuseOfPlugin"
+msgstr "滥用https://guteURLs.de预览框服务！"
+
+#. admin - setting page - alert - The plugin has stopped the work, because your website
+msgid "misuseOfPlugin_PleasePurchaseOnlineAt https://guteurls.de"
+msgstr "该插件已停止工作，因为您的网站：<br /> - 是商业<br /> - 有广告横幅，<br /> - 或每周超过7000点击。 <br /> <br />请联系<a href=\"mailto:infomail@guteurls.de\">infomail@guteurls.de</a>进行重新激活。<br /> <br />请参阅<a href=\"https//guteurls.de/plan.php\" target=\"_blank\">https://guteurls.de/plan.php</a>"
+
+#. admin - setting page - alert guteURLsNeedYourEmailAddress
+msgid "guteURLsNeedYourEmailAddress"
+msgstr "https://guteURLs.de API需要您的联系电子邮件地址。"
+
+#. admin - setting page - alert
+msgid "pleaseEnterYourContactEmailAddress"
+msgstr "为了让API接口继续为您提供数据，它需要您的电子邮件地址。 <br /> <br />有效的电子邮件地址："
+
+#. admin - cache page
+msgid "Reset one Preview Box from cache"
+msgstr "从缓存中重置一个预览框"
+
+#. admin - cache page
+msgid "Reset data for one single preview box (force reload image and description)."
+msgstr "重置单个预览框的数据（强制重新加载图像和说明）。"
+
+#. admin - cache page
+msgid "Reset URL"
+msgstr "重置网址"
+
+#. admin - cache page
+msgid "or"
+msgstr "要么"
+
+#. admin - cache page
+msgid "list all my URLs"
+msgstr "列出我所有的网址"
+
+
+
+
+#. invalid email address
+msgid "Invalid-email"
+msgstr "无效的邮件地址"
+
+#. Get your key
+msgid "Get-your-key"
+msgstr "得到你的钥匙"
+
+#. Register now.
+msgid "Register-now"
+msgstr "现在注册."
+
+#. Get your private key.
+msgid "Get-your-private-key"
+msgstr "得到你的私钥"
+
+#. Get Licence Key
+msgid "Get-Licence-Key"
+msgstr "获取许可证密钥"
+
+#. Use your key
+msgid "Use-your-key"
+msgstr "使用你的钥匙"
+
+#. Manually enter licence key
+msgid "Manually-enter-licence-key"
+msgstr "手动输入许可证密钥"
+
+#. Please complete form
+msgid "Please-complete-form"
+msgstr "请填写表格."
+
+#. Go free
+msgid "Go-free"
+msgstr "去免费（私人使用）"
+
+#. Maximum 10 preview boxes
+msgid "Maximal-10-preview-boxes"
+msgstr "最多10个预览框"
+
+#. You can always upgrade
+msgid "You-can-always-upgrade"
+msgstr "你可以随时升级"
+
+#. Save a little money
+msgid "Save-a-little-money"
+msgstr "节省一些钱"
+
+#. Clickable text
+msgid "Clickable-text"
+msgstr "可点击的文字"
+
+#. Default text.
+msgid "Default-text."
+msgstr "默认文字"
+
+#. Example: Click here to open page
+msgid "Example-Click-here"
+msgstr "例如：点击这里"
+
+#. Description length
+msgid "Description-length"
+msgstr "描述长度"
+
+#. Max.
+msgid "Max."
+msgstr "最大。"
+
+#. Row
+msgid "Row"
+msgstr "行"
+
+#. Rows
+msgid "Rows"
+msgstr "行"
+
+#. Full text (default)
+msgid "Full-text-default"
+msgstr "全文（默认）"

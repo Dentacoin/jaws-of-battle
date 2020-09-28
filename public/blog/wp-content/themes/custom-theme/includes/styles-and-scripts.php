@@ -8,9 +8,9 @@ function job_add_styles_and_scripts() {
 
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css', array(), '1.0.0', 'all');
 
-    wp_enqueue_style('custom_style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.1', 'all' );
+    wp_enqueue_style('custom_style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.2', 'all' );
 
-    wp_enqueue_style('custom_dir_style', get_template_directory_uri() . '/style.css', array(), '1.0.1', 'all' );
+    wp_enqueue_style('custom_dir_style', get_template_directory_uri() . '/style.css', array(), '1.0.2', 'all' );
 
 
     //wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/assets/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js', array('jquery'));
@@ -20,9 +20,9 @@ function job_add_styles_and_scripts() {
 
     wp_enqueue_script( 'bootbox_script', get_stylesheet_directory_uri(). '/assets/libs/bootbox.min.js', array(), false, true );
 
-    wp_enqueue_script('custom_script_helper', get_template_directory_uri() . '/assets/js/basic.js', array(), '1.0.1', true);
+    wp_enqueue_script('custom_script_helper', get_template_directory_uri() . '/assets/js/basic.js', array(), '1.0.2', true);
 
-    wp_enqueue_script('custom_script', get_template_directory_uri() . '/assets/js/index.js', array(), '1.0.1', true);
+    wp_enqueue_script('custom_script', get_template_directory_uri() . '/assets/js/index.js', array(), '1.0.2', true);
 
     if(empty($_COOKIE['performance_cookies']) && empty($_COOKIE['functionality_cookies']) && empty($_COOKIE['marketing_cookies']) && empty($_COOKIE['strictly_necessary_policy'])) {
         wp_enqueue_style('combined_cookie_style', 'https://dentacoin.com/assets/libs/dentacoin-package/css/style-cookie.css', array(), time(), 'all' );

@@ -1,0 +1,272 @@
+# Copyright (C) 2013 exopin
+# This file is distributed under the same license as the exopin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: exopin 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/exopin\n"
+"POT-Creation-Date: 2013-03-27 18:00:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. Plugin Name of the plugin/theme
+msgid "guteurls"
+msgstr "guteurls"
+
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  exopin.pot (exopin 1.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.guteurls.de/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Widget test"
+msgstr "WIDGET TEST"
+
+#. Author of the plugin/theme
+msgid "eby"
+msgstr "Martin Schädler"
+
+#. Language
+msgid "lang"
+msgstr "en"
+
+#. Settings language
+msgid "in-english"
+msgstr "Show this page in english / Show this page in english."
+
+#. Admin Menu
+msgid "URL-Preview"
+msgstr "URL Preview"
+
+#. Settings Title
+msgid "Settings"
+msgstr "Settings"
+
+#. Settings Box1 text: The use of the plug-in is free. <br /> <br />The plugin gets the preview data from the service guteurls.de. <br /> This service is free to use for non-commercial users with low page view numbers. <br /><br />Otherwise you have to register at guteurls.de.
+msgid "This-plugin-is-for-free-usage-for-no-commercial-websites-with-few-pageviews"
+msgstr "The use of the plug-in is free. <br /> <br />The plugin gets the preview data from the service guteurls.de. <br /> This service is free to use for non-commercial users with low page view numbers. <br /><br />Otherwise you have to register at guteurls.de."
+
+#. Settings Box1 text: In the case <a href=\"%1$s\" target=\"_blank\">click here</a> and the added your license key here:
+msgid "Else-purchase-click here %1$s."
+msgstr "In the case <a href=\"%1$s\" target=\"_blank\">click here</a> and the added your license key here:"
+
+#. Settings optional
+msgid "optional"
+msgstr "(Optional)"
+
+#. Settings Invalid licence key
+msgid "Invalid-licence-key"
+msgstr "Invalid licence key!"
+
+#. Settings Box2 title
+msgid "How-many-URL-Previews?"
+msgstr "How many URL Previews?"
+
+#. Settings Box2 Line 1
+msgid "Add-maximal-one"
+msgstr "Maximal one URL preview <b>per article</b>"
+
+#. Settings Box2 line 2
+msgid "and-add-it."
+msgstr "and add the preview at the bottom."
+
+#. Settings Box2 Line 3
+msgid "Add-one-URL,"
+msgstr "Maximal one URL preview <b>per paragraph</b>"
+
+#. Settings Box2 Line 4
+msgid "one-per-P-Tag."
+msgstr "one per HTML Tag <b>P</b> (&lt;p&gt; chapter &lt;/p&gt;)"
+
+#. Settings Box3 title
+msgid "Change-article-link?"
+msgstr "Change article link?"
+
+
+#. Settings Box3 Line 1
+msgid "Your-title-is-clickable-to"
+msgstr "Your title is clickable and links to"
+
+#. Settings Box3 Line 2
+msgid "the-first-found-URL."
+msgstr "the first found URL."
+
+#. Settings Box3 Line 3
+msgid "your-own-article."
+msgstr "your own article (standard Wordpress behaviour)."
+
+msgid "setting-manual-URL"
+msgstr "<b>Manually</b> set preview boxes, by "
+
+msgid "setting-manual-URL2"
+msgstr "writing <b>[urlpreviewbox url=\"&lt;url&gt;\"]</b> within the text.<br /><br /><div style=\"background-color:#ffffff\"><u><b>Example blog text</b></u>:<br /><br />This is a blog text and below should be displayed<br /> an URL preview. Therefore I only have to write<br /> in my text the following.<br />[urlpreviewbox url=\"http://alien.de\"]<br />And now my blog text ends here.<br /><br /></div>"
+
+msgid "setting-manual-URL3"
+msgstr "Or in the visual editor click<br />on the button 'URL box'."
+
+msgid "Expert_settings"
+msgstr "Settings for experts"
+
+msgid "Optional. You can let these values empty."
+msgstr "Optional. You can let these values on standard."
+
+msgid "Standard. White background color."
+msgstr "Standard. White background color."
+
+msgid "Transparent"
+msgstr "Transparent"
+
+msgid "Standard animation."
+msgstr "Standard animation"
+
+msgid "No animation"
+msgstr "No animation"
+
+msgid "Use a gif from"
+msgstr "E.g. use a gif from <a href=\"http://loading.io\" target=\"_blank\">http://loading.io</a>"
+
+msgid "Show URL preview box in excerpt"
+msgstr "Show URL preview box in excerpt"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "Hide images"
+msgstr "Hide images"
+
+msgid "Url preview box size"
+msgstr "Url preview box size"
+
+msgid "tiny"
+msgstr "tiny"
+
+msgid "small"
+msgstr "small"
+
+msgid "standard"
+msgstr "standard"
+
+msgid "tall"
+msgstr "tall"
+
+#. admin - setting page - alert - misuseOfPlugin
+msgid "misuseOfPlugin"
+msgstr "Misuse of https://guteURLs.de preview box service!"
+
+#. admin - setting page - alert - The plugin has stopped the work, because your website
+msgid "misuseOfPlugin_PleasePurchaseOnlineAt https://guteurls.de"
+msgstr "The plugin has stopped the work, because your website: <br /> - is commercial<br /> - has advertising banner, <br /> - or more than 7,000 hits per week. <br /><br /> Please contact <a href=\"mailto:infomail@guteurls.de\">infomail@guteurls.de</a> for an reactivation.<br /><br />See <a href=\"https://guteurls.de/plan.php\" target=\"_blank\">https://guteurls.de/plan.php</a>"
+
+#. admin - setting page - alert guteURLsNeedYourEmailAddress
+msgid "guteURLsNeedYourEmailAddress"
+msgstr "https://guteURLs.de API needs your contact email address."
+
+#. admin - setting page - alert
+msgid "pleaseEnterYourContactEmailAddress"
+msgstr "In order for the API interface to continue to provide you with data, it needs your email address. <br /><br />Valid email address: "
+
+#. admin - cache page
+msgid "Reset one Preview Box from cache"
+msgstr "Reset one Preview Box from cache"
+
+#. admin - cache page
+msgid "Reset data for one single preview box (force reload image and description)."
+msgstr "Reset data for one single preview box (force reload image and description)."
+
+#. admin - cache page
+msgid "Reset URL"
+msgstr "Reset URL"
+
+#. admin - cache page
+msgid "or"
+msgstr "or"
+
+#. admin - cache page
+msgid "list all my URLs"
+msgstr "List all my URLs"
+
+
+#. invalid email address
+msgid "Invalid-email"
+msgstr "Invalid email address"
+
+#. Get your key
+msgid "Get-your-key"
+msgstr "Get your key"
+
+#. Register now.
+msgid "Register-now"
+msgstr "Register now."
+
+#. Get your private key.
+msgid "Get-your-private-key"
+msgstr "Get your private key"
+
+#. Get Licence Key
+msgid "Get-Licence-Key"
+msgstr "Get Licence Key"
+
+#. Use your key
+msgid "Use-your-key"
+msgstr "Use your key"
+
+#. Manually enter licence key
+msgid "Manually-enter-licence-key"
+msgstr "Manually enter licence key."
+
+#. Please complete form
+msgid "Please-complete-form"
+msgstr "Please complete the form."
+
+#. Go free
+msgid "Go-free"
+msgstr "Go free (private use)"
+
+#. Maximum 10 preview boxes
+msgid "Maximal-10-preview-boxes"
+msgstr "Maximum 10 preview boxes"
+
+#. You can always upgrade
+msgid "You-can-always-upgrade"
+msgstr "You can always upgrade."
+
+#. Save a little money
+msgid "Save-a-little-money"
+msgstr "Save a few bugs"
+
+#. Clickable text
+msgid "Clickable-text"
+msgstr "Clickable text"
+
+#. Default text.
+msgid "Default-text."
+msgstr "Default text."
+
+#. Example: Click here to open page
+msgid "Example-Click-here"
+msgstr "Example: Click here to open page"
+
+#. Description length
+msgid "Description-length"
+msgstr "Description length"
+
+#. Max.
+msgid "Max."
+msgstr "Max."
+
+#. Row
+msgid "Row"
+msgstr "Row"
+
+#. Rows
+msgid "Rows"
+msgstr "Rows"
+
+#. Full text (default)
+msgid "Full-text-default"
+msgstr "Full text (default)"

@@ -403,4 +403,13 @@ ol {
             right: -10px;
         }
     }
-}  
+}
+
+.guteurlsBox {
+    img {
+        margin: 0 !important;   
+    }
+    .guteurlsBottom {
+        display: none !important;
+    }
+}

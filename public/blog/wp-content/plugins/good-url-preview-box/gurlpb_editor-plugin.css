@@ -1,0 +1,11 @@
+/* Add this code in style.css */
+span.gurlpb {
+    display: block;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #888;
+    margin-left: auto;
+    margin-right: auto;
+}
