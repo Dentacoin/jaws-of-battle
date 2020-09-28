@@ -29,16 +29,18 @@ $thisPost = $post;
                 <div class="col-xs-12 col-md-10 col-md-offset-1 lato-bold">
                     <nav>
                         <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                            <li class="inline-block"  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo site_url(''); ?>" itemprop="item"><span itemprop="title">HOME</span></a></li>
+                            <li class="inline-block"  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo site_url(''); ?>" itemprop="item"><span itemprop="name">HOME</span></a><meta itemprop="position" content="1" /></li>
 
                             <?php
+                            $currentUrlPosition = 2;
                             if (!empty($categories)) {
+                                $currentUrlPosition = 3;
                                 ?>
-                                <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo get_category_link($categories[0]->term_id); ?>#categories-list" itemprop="item"><span itemprop="title"><?php echo $categories[0]->name; ?></span></a></li>
+                                <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?php echo get_category_link($categories[0]->term_id); ?>#categories-list" itemprop="item"><span itemprop="name"><?php echo $categories[0]->name; ?></span></a><meta itemprop="position" content="2" /></li>
                                 <?php
                             }
                             ?>
-                            <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="title"><?php echo mb_substr(strip_tags($post->post_title), 0, 15); ?>...</span><meta itemprop="url" content="CURRENT URL"></li></ul>
+                            <li class="inline-block" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name"><?php echo mb_substr(strip_tags($post->post_title), 0, 15); ?>...</span><meta itemprop="url" content="CURRENT URL"><meta itemprop="position" content="<?php echo $currentUrlPosition; ?>" /></li></ul>
                     </nav>
                 </div>
             </div>
