@@ -114,12 +114,12 @@
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Dentacoin Blog",
+        "name": "Dentacare: Jaws of Battle Blog",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://blog.dentacoin.com/wp-content/themes/hestia-child/assets/images/one-line-logo-black.png",
-          "width": "2018",
-          "height": "442"
+          "url": "https://jawsofbattle.dentacoin.com/blog/wp-content/themes/custom-theme/assets/images/dentacare-jaws-of-battle-logo.png",
+          "width": "1588",
+          "height": "1016"
         }
       },
       "datePublished": "<?php echo $post->post_date; ?>"
