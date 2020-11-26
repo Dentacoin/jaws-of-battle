@@ -144,8 +144,21 @@ function router() {
 }
 router();
 
-if (typeof(dcnCookie) != undefined) {
+if (typeof(dcnCookie) != 'undefined') {
     dcnCookie.init({
         'google_app_id' : 'UA-97167262-6'
+    });
+}
+
+if ($('.bottom-fixed-promo-banner').length) {
+    $('.bottom-fixed-promo-banner .close-banner').click(function() {
+        $('footer').removeClass('extra-bottom-padding');
+        $('.bottom-fixed-promo-banner').remove();
+
+        var now = new Date();
+        var time = now.getTime();
+        time += 7200 * 1000;
+        now.setTime(time);
+        document.cookie = 'hide-holiday-calendar-banner=1; expires=' + now.toUTCString() + ';domain=dentacoin.com;path=/;';
     });
 }

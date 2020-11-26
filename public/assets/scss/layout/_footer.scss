@@ -1,4 +1,13 @@
 footer {
+    &.extra-bottom-padding {
+        padding-bottom: 400px !important;
+        @include breakpoint($md-down) {
+            padding-bottom: 300px !important;
+        }
+        @include breakpoint($xs) {
+            padding-bottom: 200px !important;
+        }
+    }
     .border-top {
         border-top: 1px solid black;
         ul {

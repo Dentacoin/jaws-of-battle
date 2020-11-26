@@ -79,54 +79,6 @@
         </div>
     </footer>
 </div><!-- .page -->
-<?php
-    wp_footer();
-
-    if (is_single()) {
-        ?>
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "NewsArticle",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "<?php echo get_permalink($post); ?>"
-      },
-      "headline": "<?php echo $post->post_title; ?>",
-      "description": "<?php substr($post->post_content, 0, 130); ?>...",
-        <?php
-            $imageUrl = get_the_post_thumbnail_url($post->ID);
-            if (!empty($imageUrl)) {
-                list($width, $height) = getimagesize($imageUrl);
-                ?>
-                  "image": {
-                    "@type": "ImageObject",
-                    "url": "<?php echo $imageUrl; ?>",
-                    "width": "<?php echo $width; ?>",
-                    "height": "<?php echo $height; ?>"
-                    },
-                <?php
-            }
-            ?>
-      "author": {
-        "@type": "Person",
-        "name": "<?php echo get_the_author(); ?>"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Dentacare: Jaws of Battle Blog",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jawsofbattle.dentacoin.com/blog/wp-content/themes/custom-theme/assets/images/dentacare-jaws-of-battle-logo.png",
-          "width": "1588",
-          "height": "1016"
-        }
-      },
-      "datePublished": "<?php echo $post->post_date; ?>"
-    }
-    </script>
-        <?php
-    }
-?>
+<?php wp_footer(); ?>
 </body>
 </html>
