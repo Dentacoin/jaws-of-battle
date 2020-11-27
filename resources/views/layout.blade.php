@@ -125,7 +125,7 @@
         </div>
     </footer>
 
-    @if(empty($_COOKIE['hide-holiday-calendar-banner']))
+    @if(empty($_COOKIE['hide-holiday-calendar-banner']) && strtotime('2020/12/01 00:00:00') < time())
         <div class="bottom-fixed-promo-banner fs-0">
             <a href="javascript:void(0);" class="close-banner">×</a>
             <a href="https://dentacoin.com/holiday-calendar/2020" target="_blank">
