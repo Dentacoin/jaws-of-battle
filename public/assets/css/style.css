@@ -5810,6 +5810,30 @@ img {
       width: 95%;
       margin-bottom: 15px; }
 
+.bottom-fixed-promo-banner {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9990; }
+  .bottom-fixed-promo-banner .close-banner {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    z-index: 1000; }
+    @media screen and (max-width: 767px) {
+      .bottom-fixed-promo-banner .close-banner {
+        top: 0;
+        right: 10px;
+        font-size: 35px;
+        line-height: 35px; } }
+  .bottom-fixed-promo-banner video {
+    width: 100%; }
+
 .light-blue-white-btn, input[type='submit'].light-blue-white-btn {
   font-size: 20px;
   color: #02a6db;
