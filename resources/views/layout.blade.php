@@ -131,7 +131,11 @@
             <a href="https://dentacoin.com/holiday-calendar/2020" target="_blank">
                 <div itemprop="video" itemscope="" itemtype="http://schema.org/VideoObject">
                     <video muted autoplay loop>
-                        <source src="https://dentacoin.com/assets/videos/dentacoin-christmas-calendar-banner.mp4" type="video/mp4">
+                        @if((isset($mobile) && $mobile))
+                            <source src="https://dentacoin.com/assets/videos/dentacoin-christmas-calendar-banner-mobile.mp4" type="video/mp4">
+                        @else
+                            <source src="https://dentacoin.com/assets/videos/dentacoin-christmas-calendar-banner.mp4" type="video/mp4">
+                        @endif
                         Your browser does not support HTML5 video.
                     </video>
                     <meta itemprop="name" content="Dentacoin Holiday Calendar Video">
