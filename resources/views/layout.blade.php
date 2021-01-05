@@ -62,7 +62,7 @@
 <body class="@if(!empty(Route::current())) {{Route::current()->getName()}} @else class-404 @endif">
     <header @if(!empty(Route::current()) && Route::current()->getName() == 'home') class="home-header" @endif></header>
     <main>@yield('content')</main>
-    <footer class="padding-bottom-30 padding-top-40 margin-top-20 container @if((empty($_COOKIE['hide-holiday-calendar-banner']) && strtotime('2020/12/01 00:00:00') < time()) || !empty($_COOKIE['test-holiday-calendar-banner'])) extra-bottom-padding @endif">
+    <footer class="padding-bottom-30 padding-top-40 margin-top-20 container">
         <div class="row fs-0 padding-bottom-15">
             <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block col-xs-6 text-right">
                 <a href="https://play.google.com/store/apps/details?id=com.DentaCare.JawsOfBattle&hl=en_US" target="_blank">
@@ -125,7 +125,7 @@
         </div>
     </footer>
 
-    @if((empty($_COOKIE['hide-holiday-calendar-banner']) && strtotime('2020/12/01 00:00:00') < time()) || !empty($_COOKIE['test-holiday-calendar-banner']))
+    {{--@if((empty($_COOKIE['hide-holiday-calendar-banner']) && strtotime('2020/12/01 00:00:00') < time()) || !empty($_COOKIE['test-holiday-calendar-banner']))
         <div class="bottom-fixed-promo-banner fs-0">
             <a href="javascript:void(0);" class="close-banner">×</a>
             <a href="https://dentacoin.com/holiday-calendar/2020" target="_blank">
@@ -146,7 +146,7 @@
                 </div>
             </a>
         </div>
-    @endif
+    @endif--}}
 
 <script src="/dist/js/front-libs-script.js?v=1.0.6"></script>
 

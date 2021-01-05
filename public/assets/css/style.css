@@ -6176,14 +6176,6 @@ img {
     .shortcode.featured-cards-slider .single-slide .content .mobile-image {
       max-width: 200px; } }
 
-footer.extra-bottom-padding {
-  padding-bottom: 400px !important; }
-  @media screen and (max-width: 1199px) {
-    footer.extra-bottom-padding {
-      padding-bottom: 300px !important; } }
-  @media screen and (max-width: 767px) {
-    footer.extra-bottom-padding {
-      padding-bottom: 200px !important; } }
 footer .border-top {
   border-top: 1px solid black; }
   footer .border-top ul li {
