@@ -70,7 +70,7 @@
                 </a>
             </figure>
             <figure itemscope="" itemtype="http://schema.org/ImageObject" class="inline-block col-xs-6 text-left">
-                <a href="https://testflight.apple.com/join/hOg8An1t" target="_blank">
+                <a href="https://apps.apple.com/au/app/dentacare-jaws-of-battle/id1478090870" target="_blank">
                     <img src="/assets/uploads/app-store.svg" class="width-100 max-width-170" alt="App Store button"/>
                 </a>
             </figure>
