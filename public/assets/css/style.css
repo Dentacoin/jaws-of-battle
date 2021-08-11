@@ -5836,6 +5836,13 @@ img {
         width: 100%;
     }
 }*/
+.bootbox .bootbox-close-button {
+  position: absolute;
+  right: 10px;
+  font-size: 26px;
+  top: 0;
+  margin-top: 0 !important; }
+
 .light-blue-white-btn, input[type='submit'].light-blue-white-btn {
   font-size: 20px;
   color: #02a6db;

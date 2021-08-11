@@ -5,7 +5,7 @@
             <img src="/assets/uploads/dentacare-jaws-of-battle-logo.png" class="width-100 max-width-350" alt="Jaws of battle logo">
         </figure>
         <div class="form-container color-white padding-top-20 padding-bottom-100 max-width-600 margin-0-auto padding-left-15 padding-right-15">
-            <form class="change-password-form" action="{{ route('submit-change-password') }}">
+            <form method="POST" class="change-password-form" action="{{ route('submit-change-password') }}">
                 <h1 class="text-center fs-44 fs-xs-24 lato-black">PASSWORD RECOVER</h1>
                 <div class="text-center fs-26 fs-xs-18 padding-bottom-25">Please enter your new password.</div>
                 <div class="padding-bottom-15">

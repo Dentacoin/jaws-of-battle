@@ -36,7 +36,14 @@ class UserController extends Controller
             'token.required' => 'Token is required.'
         ]);
 
-        var_dump($request->input());
-        die();
+        $token = DB::connection('mysql2')->table('users')->select('users.*')->where(array('users.requestedPasswordChangeToken' => trim($request->input('token'))))->get()->first();
+        if (!empty($token)) {
+            $salt = bin2hex(random_bytes(16));
+            DB::connection('mysql2')->table('users')->where(array('users.requestedPasswordChangeToken' => trim($request->input('token'))))->limit(1)->update(array('requestedPasswordChangeToken' => NULL, 'salt' => $salt, 'password' => hash_pbkdf2('sha256', trim($request->input('password')), $salt, 10000, 32)));
+
+            return redirect()->route('home')->with(['success' => 'Your Dentacare: Jaws of Battle password have been updated successfully!']);
+        } else {
+            return abort(404);
+        }
     }
 }

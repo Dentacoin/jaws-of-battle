@@ -146,6 +146,10 @@
 <script src="https://dentacoin.com/assets/js/basic.js?v=1.0.6"></script>
 {{--<script src="/assets/js/index.js?v=1.0.6"></script>--}}
 <script src="/dist/js/front-script.js?v=1.0.6"></script>
-
+    @if(session('success'))
+        <script>
+            basic.showAlert("{!! session('success') !!}", '', true);
+        </script>
+    @endif
 </body>
 </html>
