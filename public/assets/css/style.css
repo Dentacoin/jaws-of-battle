@@ -5810,30 +5810,32 @@ img {
       width: 95%;
       margin-bottom: 15px; }
 
-.bottom-fixed-promo-banner {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 9990; }
-  .bottom-fixed-promo-banner .close-banner {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    line-height: 50px;
-    z-index: 1000; }
-    @media screen and (max-width: 767px) {
-      .bottom-fixed-promo-banner .close-banner {
-        top: 0;
-        right: 10px;
-        font-size: 35px;
-        line-height: 35px; } }
-  .bottom-fixed-promo-banner video {
-    width: 100%; }
-
+/*.bottom-fixed-promo-banner {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9990;
+    .close-banner {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        line-height: 50px;
+        z-index: 1000;
+        @include breakpoint($xs) {
+            top: 0;
+            right: 10px;
+            font-size: 35px;
+            line-height: 35px;
+        }
+    }
+    video {
+        width: 100%;
+    }
+}*/
 .light-blue-white-btn, input[type='submit'].light-blue-white-btn {
   font-size: 20px;
   color: #02a6db;
@@ -6422,6 +6424,26 @@ footer .border-top {
   background-position: center top; }
   .section-a-jaw-breaking-game-experience h2, .section-a-jaw-breaking-game-experience p {
     text-shadow: 1px 10px 18px black, 0 0px 10px black, 1px 10px 20px black; }
+
+.change-password-section {
+  background-size: 100% auto, cover;
+  background-image: url(/assets/uploads/reset-pass-border.png), url(/assets/uploads/blue-blackground.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, center top; }
+  .change-password-section .change-password-form {
+    padding: 15px 20px;
+    border: 3px solid white;
+    background: #83c9dd;
+    color: white;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.8); }
 
 .container-404 {
   padding-bottom: 100px;

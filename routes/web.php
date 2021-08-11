@@ -19,5 +19,9 @@ Route::group(['prefix' => '/', 'middleware' => 'frontEndMiddleware'], function (
 
     Route::get('/', 'PagesController@getPageView')->name('home');
 
+    Route::get('/change-password', 'UserController@getChangePasswordView')->name('change-password');
+
+    Route::post('/submit-change-password', 'UserController@submitChangePassword')->name('submit-change-password');
+
     Route::get('/sitemap', 'Controller@getSitemap')->name('sitemap');
 });
