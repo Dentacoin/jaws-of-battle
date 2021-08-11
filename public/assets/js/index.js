@@ -146,7 +146,7 @@ var pagesData = {
 
                 if (this_form.find('#password').val().trim() == '') {
                     basic.showAlert('Please enter password', '', true);
-                } else if (this_form.find('#password').val().trim().length < 6 || this_form.find('#password').val().trim() > 30) {
+                } else if (this_form.find('#password').val().trim().length < 6 || this_form.find('#password').val().trim().length > 30) {
                     basic.showAlert('Password must include minimum 6 symbols and maximum 30 symbols.', '', true);
                 } else if (this_form.find('#password').val().trim() != this_form.find('#repeat-password').val().trim()) {
                     basic.showAlert('Please make sure both passwords are same.', '', true);

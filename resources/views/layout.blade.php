@@ -29,8 +29,8 @@
     
     <style>
     </style>
-    <link rel="stylesheet" type="text/css" href="/dist/css/front-libs-style.css?v=1.0.6">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=1.0.6">
+    <link rel="stylesheet" type="text/css" href="/dist/css/front-libs-style.css?v=1.0.7">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=1.0.7">
     <script>
         var HOME_URL = '{{ route("home") }}';
     </script>
@@ -137,15 +137,15 @@
         </div>
     @endif--}}
 
-<script src="/dist/js/front-libs-script.js?v=1.0.6"></script>
+<script src="/dist/js/front-libs-script.js?v=1.0.7"></script>
 
 @if(empty($_COOKIE['performance_cookies']) && empty($_COOKIE['functionality_cookies']) && empty($_COOKIE['marketing_cookies']) && empty($_COOKIE['strictly_necessary_policy']))
     <script src="https://dentacoin.com/assets/libs/dentacoin-package/js/init.js?v={{time()}}"></script>
 @endif
 
-<script src="https://dentacoin.com/assets/js/basic.js?v=1.0.6"></script>
-{{--<script src="/assets/js/index.js?v=1.0.6"></script>--}}
-<script src="/dist/js/front-script.js?v=1.0.6"></script>
+<script src="https://dentacoin.com/assets/js/basic.js?v=1.0.7"></script>
+{{--<script src="/assets/js/index.js?v=1.0.7"></script>--}}
+<script src="/dist/js/front-script.js?v=1.0.7"></script>
     @if(session('success'))
         <script>
             basic.showAlert("{!! session('success') !!}", '', true);
