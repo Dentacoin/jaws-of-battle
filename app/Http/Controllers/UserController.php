@@ -11,9 +11,6 @@ class UserController extends Controller
     protected function getChangePasswordView(){
         if (!empty(Input::get('token'))) {
             $token = DB::connection('mysql2')->table('users')->select('users.*')->where(array('users.requestedPasswordChangeToken' => trim(Input::get('token'))))->get()->first();
-            var_dump(trim(Input::get('token')));
-            var_dump($token);
-            die();
             if (!empty($token)) {
                 return view('pages/change-password');
             } else {
