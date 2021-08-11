@@ -6430,7 +6430,7 @@ footer .border-top {
   background-image: url(/assets/uploads/reset-pass-border.png), url(/assets/uploads/blue-blackground.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left 0 top 0, center top; }
-  .change-password-section .change-password-form {
+  .change-password-section .change-password-form input[type='password'] {
     padding: 15px 20px;
     border: 3px solid white;
     background: #83c9dd;
